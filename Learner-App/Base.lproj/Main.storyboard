@@ -75,6 +75,16 @@
                                     <segue destination="sz8-k9-bnF" kind="custom" id="t4J-S1-NFd"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IUy-o9-Buw">
+                                <rect key="frame" x="327" y="44" width="67" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Skip Juga"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jls-ZZ-Zi0">
+                                <rect key="frame" x="249" y="88" width="37" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Coba"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="xIR-FP-4Rn"/>
@@ -151,7 +161,7 @@
                                     <segment title="Second"/>
                                 </segments>
                                 <connections>
-                                    <segue destination="1vY-MF-VoS" kind="replace" splitViewControllerTargetIndex="1" id="7b1-qd-ANP"/>
+                                    <segue destination="1vY-MF-VoS" kind="push" splitViewControllerTargetIndex="1" id="7b1-qd-ANP"/>
                                 </connections>
                             </segmentedControl>
                         </subviews>
