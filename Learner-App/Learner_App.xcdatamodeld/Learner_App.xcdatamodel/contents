@@ -1,4 +1,27 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="false" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="16119" systemVersion="19E287" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Lesson" representedClassName="Lesson" syncable="YES" codeGenerationType="class">
+        <attribute name="lesson" optional="YES" attributeType="String"/>
+        <attribute name="step" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="Question" representedClassName="Question" syncable="YES" codeGenerationType="class">
+        <attribute name="answer" optional="YES" attributeType="String"/>
+        <attribute name="question" optional="YES" attributeType="String"/>
+        <attribute name="step" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="Subject" representedClassName="Subject" syncable="YES" codeGenerationType="class">
+        <attribute name="subjectID" optional="YES" attributeType="String"/>
+        <attribute name="subjectLevel" optional="YES" attributeType="String"/>
+        <attribute name="subjectName" optional="YES" attributeType="String"/>
+        <attribute name="subjectProgress" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="subjectStepCurrent" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="subjectStepTotal" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="lessonRelationship" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Lesson"/>
+        <relationship name="questionRelationship" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Question"/>
+    </entity>
+    <elements>
+        <element name="Subject" positionX="-267.69921875" positionY="-101.609375" width="145.421875" height="163"/>
+        <element name="Lesson" positionX="-467.57421875" positionY="-84.63671875" width="128" height="73"/>
+        <element name="Question" positionX="-56.7890625" positionY="-115.29296875" width="128" height="88"/>
+    </elements>
 </model>
