@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2043BBC3247BF90F00B8932B /* LearnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2043BBC2247BF90F00B8932B /* LearnViewController.swift */; };
 		20B69D9E2474CE7700D5F3AD /* Subject+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B69D9D2474CE7700D5F3AD /* Subject+Extension.swift */; };
 		20B69DA02474D07400D5F3AD /* MiniDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B69D9F2474D07400D5F3AD /* MiniDatabase.swift */; };
 		20B69DA22474D0E700D5F3AD /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B69DA12474D0E700D5F3AD /* UIViewController+Extension.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2043BBC2247BF90F00B8932B /* LearnViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnViewController.swift; sourceTree = "<group>"; };
 		20B69D9D2474CE7700D5F3AD /* Subject+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Subject+Extension.swift"; sourceTree = "<group>"; };
 		20B69D9F2474D07400D5F3AD /* MiniDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniDatabase.swift; sourceTree = "<group>"; };
 		20B69DA12474D0E700D5F3AD /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 				20B69D9D2474CE7700D5F3AD /* Subject+Extension.swift */,
 				20B69D9F2474D07400D5F3AD /* MiniDatabase.swift */,
 				20B69DA12474D0E700D5F3AD /* UIViewController+Extension.swift */,
+				2043BBC2247BF90F00B8932B /* LearnViewController.swift */,
 			);
 			path = "Learner-App";
 			sourceTree = "<group>";
@@ -171,6 +174,7 @@
 				484A269424736C1100F28462 /* AppDelegate.swift in Sources */,
 				20B69DA02474D07400D5F3AD /* MiniDatabase.swift in Sources */,
 				20B69DA22474D0E700D5F3AD /* UIViewController+Extension.swift in Sources */,
+				2043BBC3247BF90F00B8932B /* LearnViewController.swift in Sources */,
 				20B69D9E2474CE7700D5F3AD /* Subject+Extension.swift in Sources */,
 				484A269624736C1100F28462 /* SceneDelegate.swift in Sources */,
 			);

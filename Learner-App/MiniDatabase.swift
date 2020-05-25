@@ -10,6 +10,7 @@ import Foundation
 
 
 let IS_FIRST_OPEN = "IS_FIRST_OPEN"
+let LAST_PROGRESS_ID_KEY = "LAST_PROGRESS_ID_KEY"
 
 class MiniDatabase {
     
@@ -22,5 +23,11 @@ class MiniDatabase {
         return UserDefaults.standard.bool(forKey: IS_FIRST_OPEN)
     }
     
-
+    static func setLastProgressID(lastProgressID : Int){
+        UserDefaults.standard.set(lastProgressID, forKey: IS_FIRST_OPEN)
+    }
+    
+    static func getLastProgressID() -> Int {
+        return UserDefaults.standard.integer(forKey: LAST_PROGRESS_ID_KEY)
+    }
 }
