@@ -9,6 +9,7 @@ import UIKit
 
 class LearnViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+    @IBOutlet weak var viewLastProgress: UIView!
     @IBOutlet weak var learnTableView: UITableView!
     @IBOutlet weak var labelLastProgressSubject: UILabel!
     @IBOutlet weak var labelLastProgressLevel: UILabel!
@@ -19,11 +20,28 @@ class LearnViewController: UIViewController, UITableViewDelegate, UITableViewDat
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        subjectList = Subject.fetchAll(context: getViewContext())
+       
         fillSubjectToCoreData()
         setLastProgress()
-        tableViewConfig()
+        getDataFromCoreData()
+        initOnClickLastProgress()
     }
+    
+    func initOnClickLastProgress(){
+        let gesture = UITapGestureRecognizer(target: self, action:  #selector(self.onLastProgressClicked))
+        viewLastProgress.addGestureRecognizer(gesture)
+    }
+    
+    func getDataFromCoreData(){
+        subjectList = Subject.fetchAll(context: getViewContext())
+        tableViewConfig()
+        print(subjectList)
+    }
+    
+    @objc func onLastProgressClicked(sender : UITapGestureRecognizer) {
+          performSegue(withIdentifier: "toDetailPage", sender: nil)
+    }
+    
     func tableViewConfig(){
         learnTableView.dataSource = self
         learnTableView.delegate = self
@@ -56,10 +74,12 @@ class LearnViewController: UIViewController, UITableViewDelegate, UITableViewDat
             cell.labelSubjectProgress.text = "\(subject.subjectProgress)%"
             cell.circleSubjectProgress.angle = changePercentToDegree(percent: Double(subject.subjectProgress))
                   //persen/100 * 360 ini jadi degree
+            cell.changeColor()
             return cell
         }
         return LearnTableViewCell()
     }
+    
     
     func changePercentToDegree(percent : Double) -> Double{
         return percent/100 * 360
@@ -75,5 +95,11 @@ class LearnViewController: UIViewController, UITableViewDelegate, UITableViewDat
     override func viewWillAppear(_ animated: Bool) {
         setLastProgress()
     }
+    
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        if let destination = segue.destination as? DetailPage {
+//            destination.recipe = sender as? Recipe
+//        }
+//    }
 }
 
