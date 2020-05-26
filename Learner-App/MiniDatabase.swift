@@ -23,11 +23,11 @@ class MiniDatabase {
         return UserDefaults.standard.bool(forKey: IS_FIRST_OPEN)
     }
     
-    static func setLastProgressID(lastProgressID : Int){
-        UserDefaults.standard.set(lastProgressID, forKey: IS_FIRST_OPEN)
+    static func setLastProgressID(lastProgressID : String){
+        UserDefaults.standard.set(lastProgressID, forKey: LAST_PROGRESS_ID_KEY)
     }
     
-    static func getLastProgressID() -> Int {
-        return UserDefaults.standard.integer(forKey: LAST_PROGRESS_ID_KEY)
+    static func getLastProgressID() -> String {
+        return UserDefaults.standard.string(forKey: LAST_PROGRESS_ID_KEY) ?? "nil"
     }
 }
