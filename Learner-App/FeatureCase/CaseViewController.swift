@@ -11,5 +11,12 @@ import UIKit
 
 class CaseViewController: UIViewController{
     
+    //for Top Section
+    @IBOutlet weak var ImageViewTopBackground: UIImageView!
+    @IBOutlet weak var LabelTitleCase: UILabel!
+    @IBOutlet weak var ImageViewIconCase: UIImageView!
+    
+    //For table View
+    @IBOutlet weak var TableViewCaseContent: UITableViewCell!
     
 }

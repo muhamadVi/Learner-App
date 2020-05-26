@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="16119" systemVersion="19E287" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="CaseMenu" representedClassName="CaseMenu" syncable="YES" codeGenerationType="class"/>
     <entity name="Lesson" representedClassName="Lesson" syncable="YES" codeGenerationType="class">
         <attribute name="lesson" optional="YES" attributeType="String"/>
         <attribute name="step" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
@@ -20,8 +21,9 @@
         <relationship name="questionRelationship" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Question"/>
     </entity>
     <elements>
-        <element name="Subject" positionX="-267.69921875" positionY="-101.609375" width="145.421875" height="163"/>
         <element name="Lesson" positionX="-467.57421875" positionY="-84.63671875" width="128" height="73"/>
         <element name="Question" positionX="-56.7890625" positionY="-115.29296875" width="128" height="88"/>
+        <element name="Subject" positionX="-267.69921875" positionY="-101.609375" width="145.421875" height="163"/>
+        <element name="CaseMenu" positionX="-261" positionY="-36" width="128" height="43"/>
     </elements>
 </model>
