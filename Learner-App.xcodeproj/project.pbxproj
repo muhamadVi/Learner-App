@@ -20,6 +20,8 @@
 		484A269E24736C1100F28462 /* Learner_App.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 484A269C24736C1100F28462 /* Learner_App.xcdatamodeld */; };
 		484A26A024736C1300F28462 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 484A269F24736C1300F28462 /* Assets.xcassets */; };
 		484A26A324736C1300F28462 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 484A26A124736C1300F28462 /* LaunchScreen.storyboard */; };
+		4893E5C7247D2F1F00619181 /* LessonLearnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4893E5C6247D2F1F00619181 /* LessonLearnViewController.swift */; };
+		4893E5CA247D3C4D00619181 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4893E5C9247D3C4D00619181 /* WebKit.framework */; };
 		6AA38238247D028800C6DFCF /* CaseContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA38237247D028800C6DFCF /* CaseContent.swift */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +41,8 @@
 		484A269F24736C1300F28462 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		484A26A224736C1300F28462 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		484A26A424736C1300F28462 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4893E5C6247D2F1F00619181 /* LessonLearnViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonLearnViewController.swift; sourceTree = "<group>"; };
+		4893E5C9247D3C4D00619181 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		6AA38237247D028800C6DFCF /* CaseContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseContent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -47,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4893E5CA247D3C4D00619181 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +63,7 @@
 			children = (
 				2043BBC2247BF90F00B8932B /* LearnViewController.swift */,
 				204EFA74247CBD2400ED3317 /* LearnTableViewCell.swift */,
+				4893E5C6247D2F1F00619181 /* LessonLearnViewController.swift */,
 			);
 			path = LearnView;
 			sourceTree = "<group>";
@@ -67,6 +73,7 @@
 			children = (
 				484A269224736C1100F28462 /* Learner-App */,
 				484A269124736C1100F28462 /* Products */,
+				4893E5C8247D3C4D00619181 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +112,14 @@
 			children = (
 			);
 			path = OnBoarding;
+			sourceTree = "<group>";
+		};
+		4893E5C8247D3C4D00619181 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4893E5C9247D3C4D00619181 /* WebKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,6 +196,7 @@
 				484A269824736C1100F28462 /* ViewController.swift in Sources */,
 				484A269E24736C1100F28462 /* Learner_App.xcdatamodeld in Sources */,
 				484A269424736C1100F28462 /* AppDelegate.swift in Sources */,
+				4893E5C7247D2F1F00619181 /* LessonLearnViewController.swift in Sources */,
 				6AA38238247D028800C6DFCF /* CaseContent.swift in Sources */,
 				204EFA75247CBD2400ED3317 /* LearnTableViewCell.swift in Sources */,
 				20B69DA02474D07400D5F3AD /* MiniDatabase.swift in Sources */,
