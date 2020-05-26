@@ -23,6 +23,9 @@
 		4893E5C7247D2F1F00619181 /* LessonLearnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4893E5C6247D2F1F00619181 /* LessonLearnViewController.swift */; };
 		4893E5CA247D3C4D00619181 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4893E5C9247D3C4D00619181 /* WebKit.framework */; };
 		6AA38238247D028800C6DFCF /* CaseContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA38237247D028800C6DFCF /* CaseContent.swift */; };
+		924E6BD4247D647400FB0C59 /* welcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924E6BD3247D647400FB0C59 /* welcomeVC.swift */; };
+		924E6BD6247D64A700FB0C59 /* onboarding1VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924E6BD5247D64A700FB0C59 /* onboarding1VC.swift */; };
+		924E6BD8247D64DF00FB0C59 /* onboarding2VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924E6BD7247D64DF00FB0C59 /* onboarding2VC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +47,9 @@
 		4893E5C6247D2F1F00619181 /* LessonLearnViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonLearnViewController.swift; sourceTree = "<group>"; };
 		4893E5C9247D3C4D00619181 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		6AA38237247D028800C6DFCF /* CaseContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseContent.swift; sourceTree = "<group>"; };
+		924E6BD3247D647400FB0C59 /* welcomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = welcomeVC.swift; sourceTree = "<group>"; };
+		924E6BD5247D64A700FB0C59 /* onboarding1VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = onboarding1VC.swift; sourceTree = "<group>"; };
+		924E6BD7247D64DF00FB0C59 /* onboarding2VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = onboarding2VC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +100,9 @@
 				484A269524736C1100F28462 /* SceneDelegate.swift */,
 				484A269724736C1100F28462 /* ViewController.swift */,
 				484A269924736C1100F28462 /* Main.storyboard */,
+				924E6BD3247D647400FB0C59 /* welcomeVC.swift */,
+				924E6BD5247D64A700FB0C59 /* onboarding1VC.swift */,
+				924E6BD7247D64DF00FB0C59 /* onboarding2VC.swift */,
 				6AA38237247D028800C6DFCF /* CaseContent.swift */,
 				484A269F24736C1300F28462 /* Assets.xcassets */,
 				484A26A124736C1300F28462 /* LaunchScreen.storyboard */,
@@ -196,10 +205,13 @@
 				484A269824736C1100F28462 /* ViewController.swift in Sources */,
 				484A269E24736C1100F28462 /* Learner_App.xcdatamodeld in Sources */,
 				484A269424736C1100F28462 /* AppDelegate.swift in Sources */,
+				924E6BD4247D647400FB0C59 /* welcomeVC.swift in Sources */,
 				4893E5C7247D2F1F00619181 /* LessonLearnViewController.swift in Sources */,
+				924E6BD6247D64A700FB0C59 /* onboarding1VC.swift in Sources */,
 				6AA38238247D028800C6DFCF /* CaseContent.swift in Sources */,
 				204EFA75247CBD2400ED3317 /* LearnTableViewCell.swift in Sources */,
 				20B69DA02474D07400D5F3AD /* MiniDatabase.swift in Sources */,
+				924E6BD8247D64DF00FB0C59 /* onboarding2VC.swift in Sources */,
 				20B69DA22474D0E700D5F3AD /* UIViewController+Extension.swift in Sources */,
 				20254263247CC32400571239 /* KDCircularProgress.swift in Sources */,
 				2043BBC3247BF90F00B8932B /* LearnViewController.swift in Sources */,
