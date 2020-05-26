@@ -16,16 +16,6 @@ class LearnTableViewCell: UITableViewCell {
     @IBOutlet weak var viewSubjectBackground: UIView!
     @IBOutlet weak var labelSubjectProgress: UILabel!
     
-    override func awakeFromNib() {
-        initView()
-    }
-    
-    func initView(){
-        changeColor()
-        
-        //persen/100 * 360 ini jadi degree
-    }
-    
     func changeColor(){
         switch labelSubjectLevel.text {
         case "Beginner":

@@ -35,6 +35,7 @@ class LearnViewController: UIViewController, UITableViewDelegate, UITableViewDat
     func getDataFromCoreData(){
         subjectList = Subject.fetchAll(context: getViewContext())
         tableViewConfig()
+        print(subjectList)
     }
     
     @objc func onLastProgressClicked(sender : UITapGestureRecognizer) {
@@ -73,10 +74,12 @@ class LearnViewController: UIViewController, UITableViewDelegate, UITableViewDat
             cell.labelSubjectProgress.text = "\(subject.subjectProgress)%"
             cell.circleSubjectProgress.angle = changePercentToDegree(percent: Double(subject.subjectProgress))
                   //persen/100 * 360 ini jadi degree
+            cell.changeColor()
             return cell
         }
         return LearnTableViewCell()
     }
+    
     
     func changePercentToDegree(percent : Double) -> Double{
         return percent/100 * 360
