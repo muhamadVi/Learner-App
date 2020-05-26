@@ -20,7 +20,14 @@
 		484A269E24736C1100F28462 /* Learner_App.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 484A269C24736C1100F28462 /* Learner_App.xcdatamodeld */; };
 		484A26A024736C1300F28462 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 484A269F24736C1300F28462 /* Assets.xcassets */; };
 		484A26A324736C1300F28462 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 484A26A124736C1300F28462 /* LaunchScreen.storyboard */; };
+<<<<<<< Updated upstream
 		7F63B98F247CE42C00F71C19 /* CaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F63B98E247CE42C00F71C19 /* CaseViewController.swift */; };
+=======
+		4893E5C7247D2F1F00619181 /* LessonLearnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4893E5C6247D2F1F00619181 /* LessonLearnViewController.swift */; };
+		4893E5CA247D3C4D00619181 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4893E5C9247D3C4D00619181 /* WebKit.framework */; };
+		6AA38238247D028800C6DFCF /* CaseContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA38237247D028800C6DFCF /* CaseContent.swift */; };
+		7F63B996247D6AB300F71C19 /* CaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F63B995247D6AB300F71C19 /* CaseViewController.swift */; };
+>>>>>>> Stashed changes
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,7 +46,14 @@
 		484A269F24736C1300F28462 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		484A26A224736C1300F28462 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		484A26A424736C1300F28462 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+<<<<<<< Updated upstream
 		7F63B98E247CE42C00F71C19 /* CaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseViewController.swift; sourceTree = "<group>"; };
+=======
+		4893E5C6247D2F1F00619181 /* LessonLearnViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonLearnViewController.swift; sourceTree = "<group>"; };
+		4893E5C9247D3C4D00619181 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		6AA38237247D028800C6DFCF /* CaseContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseContent.swift; sourceTree = "<group>"; };
+		7F63B995247D6AB300F71C19 /* CaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseViewController.swift; sourceTree = "<group>"; };
+>>>>>>> Stashed changes
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +95,11 @@
 		484A269224736C1100F28462 /* Learner-App */ = {
 			isa = PBXGroup;
 			children = (
+<<<<<<< Updated upstream
 				7F63B98D247CE3EE00F71C19 /* CaseView */,
+=======
+				7F63B994247D6A9100F71C19 /* CaseView */,
+>>>>>>> Stashed changes
 				20254264247CD74E00571239 /* LearnView */,
 				484A26AA2473848400F28462 /* OnBoarding */,
 				484A269324736C1100F28462 /* AppDelegate.swift */,
@@ -111,6 +129,14 @@
 			isa = PBXGroup;
 			children = (
 				7F63B98E247CE42C00F71C19 /* CaseViewController.swift */,
+			);
+			path = CaseView;
+			sourceTree = "<group>";
+		};
+		7F63B994247D6A9100F71C19 /* CaseView */ = {
+			isa = PBXGroup;
+			children = (
+				7F63B995247D6AB300F71C19 /* CaseViewController.swift */,
 			);
 			path = CaseView;
 			sourceTree = "<group>";
@@ -192,6 +218,7 @@
 				204EFA75247CBD2400ED3317 /* LearnTableViewCell.swift in Sources */,
 				7F63B98F247CE42C00F71C19 /* CaseViewController.swift in Sources */,
 				20B69DA02474D07400D5F3AD /* MiniDatabase.swift in Sources */,
+				7F63B996247D6AB300F71C19 /* CaseViewController.swift in Sources */,
 				20B69DA22474D0E700D5F3AD /* UIViewController+Extension.swift in Sources */,
 				20254263247CC32400571239 /* KDCircularProgress.swift in Sources */,
 				2043BBC3247BF90F00B8932B /* LearnViewController.swift in Sources */,

@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="r21-WU-Bik">
+<<<<<<< Updated upstream
     <device id="retina6_1" orientation="portrait" appearance="light"/>
+=======
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+>>>>>>> Stashed changes
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -287,6 +291,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+<<<<<<< Updated upstream
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Case" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yb9-EY-FmY">
                                 <rect key="frame" x="66" y="98" width="53" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -318,6 +323,39 @@
                                                     <rect key="frame" x="0.0" y="-51" width="240" height="128"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+=======
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BackgrounAtas " translatesAutoresizingMaskIntoConstraints="NO" id="XYR-tD-XNh">
+                                <rect key="frame" x="174" y="44" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CaseIcon" translatesAutoresizingMaskIntoConstraints="NO" id="hh5-Kc-wHF">
+                                <rect key="frame" x="20" y="118" width="38" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Case" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mig-Po-InS">
+                                <rect key="frame" x="66" y="124" width="53" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Isv-Hv-O47">
+                                <rect key="frame" x="0.0" y="180" width="414" height="633"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="4qM-CI-8Nw">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4qM-CI-8Nw" id="N2C-6k-J5p">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EFd-SH-Uyt">
+                                                    <rect key="frame" x="87" y="-43" width="240" height="152"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+>>>>>>> Stashed changes
                                                 </view>
                                             </subviews>
                                         </tableViewCellContentView>
@@ -330,11 +368,19 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Case" image="tabCase" id="lt9-PA-BmS"/>
                     <connections>
+<<<<<<< Updated upstream
                         <outlet property="ImageIconCase" destination="IkP-98-Mxw" id="EgK-Ht-QmG"/>
                         <outlet property="ImageViewTopCase" destination="tEO-oU-1Z5" id="RgA-cq-e8a"/>
                         <outlet property="LabelTitleCase" destination="yb9-EY-FmY" id="dEn-9n-KJX"/>
                         <outlet property="TabCase" destination="lt9-PA-BmS" id="q80-5j-aya"/>
                         <outlet property="TableViewCaseContent" destination="NSF-vG-Lj7" id="PW5-Ac-nhc"/>
+=======
+                        <outlet property="ImageCaseIcon" destination="hh5-Kc-wHF" id="dwJ-NI-Svq"/>
+                        <outlet property="ImageViewBackground" destination="XYR-tD-XNh" id="Ars-BH-rJa"/>
+                        <outlet property="LabelTitleCase" destination="Mig-Po-InS" id="lgO-Mj-zFB"/>
+                        <outlet property="TableViewCaseOption" destination="Isv-Hv-O47" id="mvb-nX-mdX"/>
+                        <segue destination="hCG-q1-veT" kind="presentation" modalPresentationStyle="fullScreen" id="GJl-GZ-8HW"/>
+>>>>>>> Stashed changes
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RXz-KN-Q2L" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -368,7 +414,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GGg-Nt-xty" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5357.971014492754" y="550.44642857142856"/>
+            <point key="canvasLocation" x="5304" y="560"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="O87-Me-M1f">
