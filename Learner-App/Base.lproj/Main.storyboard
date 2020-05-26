@@ -282,18 +282,64 @@
         <!--Case-->
         <scene sceneID="Rwl-G9-oZj">
             <objects>
-                <viewController id="6o2-Uf-hyQ" sceneMemberID="viewController">
+                <viewController id="6o2-Uf-hyQ" customClass="CaseViewController" customModule="Learner_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6Mo-Qk-K4p">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Case" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yb9-EY-FmY">
+                                <rect key="frame" x="66" y="98" width="53" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BackgrounAtas " translatesAutoresizingMaskIntoConstraints="NO" id="tEO-oU-1Z5">
+                                <rect key="frame" x="174" y="44" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CaseIcon" translatesAutoresizingMaskIntoConstraints="NO" id="IkP-98-Mxw">
+                                <rect key="frame" x="20" y="89" width="38" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="NSF-vG-Lj7">
+                                <rect key="frame" x="0.0" y="202" width="414" height="611"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="BUx-h6-gDC">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="BUx-h6-gDC" id="AMt-GJ-IcC">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qtz-pN-Gy1">
+                                                    <rect key="frame" x="0.0" y="-51" width="240" height="128"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                </view>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="o7X-wZ-mI5"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Case" image="tabCase" id="lt9-PA-BmS"/>
+                    <connections>
+                        <outlet property="ImageIconCase" destination="IkP-98-Mxw" id="EgK-Ht-QmG"/>
+                        <outlet property="ImageViewTopCase" destination="tEO-oU-1Z5" id="RgA-cq-e8a"/>
+                        <outlet property="LabelTitleCase" destination="yb9-EY-FmY" id="dEn-9n-KJX"/>
+                        <outlet property="TabCase" destination="lt9-PA-BmS" id="q80-5j-aya"/>
+                        <outlet property="TableViewCaseContent" destination="NSF-vG-Lj7" id="PW5-Ac-nhc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RXz-KN-Q2L" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4351" y="560"/>
+            <point key="canvasLocation" x="4350.7246376811599" y="559.82142857142856"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="7wQ-4V-4JF">
@@ -442,6 +488,7 @@
     </scenes>
     <resources>
         <image name="BackgrounAtas " width="241" height="94"/>
+        <image name="CaseIcon" width="38" height="38"/>
         <image name="LearnIcon" width="38" height="38"/>
         <image name="tabBarLearn" width="23" height="19"/>
         <image name="tabCase" width="23" height="23"/>
