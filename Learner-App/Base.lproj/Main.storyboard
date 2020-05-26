@@ -282,6 +282,7 @@
         <!--Case-->
         <scene sceneID="Rwl-G9-oZj">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RXz-KN-Q2L" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="6o2-Uf-hyQ" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6Mo-Qk-K4p">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -291,26 +292,45 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Case" image="tabCase" id="lt9-PA-BmS"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="RXz-KN-Q2L" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4351" y="560"/>
         </scene>
-        <!--View Controller-->
+        <!--Case Content-->
         <scene sceneID="7wQ-4V-4JF">
             <objects>
-                <viewController id="hCG-q1-veT" sceneMemberID="viewController">
+                <viewController id="hCG-q1-veT" customClass="CaseContent" customModule="Learner_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Bf4-6h-nyT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SWX-UH-dg2">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="112"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hasil panen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eBJ-os-d8I">
+                                        <rect key="frame" x="147" y="52" width="121" height="27"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="panen pos" translatesAutoresizingMaskIntoConstraints="NO" id="mj5-Rs-H09">
+                                <rect key="frame" x="0.0" y="113" width="414" height="506"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="dwD-hf-Nfw">
-                                <rect key="frame" x="0.0" y="831" width="414" height="31"/>
+                                <rect key="frame" x="20" y="776" width="374" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
-                                    <segment title="First"/>
-                                    <segment title="Second"/>
+                                    <segment title="Positif"/>
+                                    <segment title="Negatif"/>
+                                    <segment title="Tak tentu"/>
                                 </segments>
                                 <connections>
+                                    <action selector="segmentTap:" destination="hCG-q1-veT" eventType="valueChanged" id="3vi-DR-ZAM"/>
                                     <segue destination="1vY-MF-VoS" kind="push" splitViewControllerTargetIndex="1" id="7b1-qd-ANP"/>
                                 </connections>
                             </segmentedControl>
@@ -319,6 +339,10 @@
                         <viewLayoutGuide key="safeArea" id="GaA-uT-ADp"/>
                     </view>
                     <navigationItem key="navigationItem" id="6VE-Gw-Cz0"/>
+                    <connections>
+                        <outlet property="graphImage" destination="mj5-Rs-H09" id="MbM-v4-qYr"/>
+                        <outlet property="segmentType" destination="dwD-hf-Nfw" id="3Zu-bo-45l"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GGg-Nt-xty" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -443,6 +467,7 @@
     <resources>
         <image name="BackgrounAtas " width="241" height="94"/>
         <image name="LearnIcon" width="38" height="38"/>
+        <image name="panen pos" width="746" height="880"/>
         <image name="tabBarLearn" width="23" height="19"/>
         <image name="tabCase" width="23" height="23"/>
     </resources>

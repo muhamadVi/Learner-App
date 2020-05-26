@@ -20,6 +20,7 @@
 		484A269E24736C1100F28462 /* Learner_App.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 484A269C24736C1100F28462 /* Learner_App.xcdatamodeld */; };
 		484A26A024736C1300F28462 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 484A269F24736C1300F28462 /* Assets.xcassets */; };
 		484A26A324736C1300F28462 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 484A26A124736C1300F28462 /* LaunchScreen.storyboard */; };
+		6AA38238247D028800C6DFCF /* CaseContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA38237247D028800C6DFCF /* CaseContent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		484A269F24736C1300F28462 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		484A26A224736C1300F28462 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		484A26A424736C1300F28462 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6AA38237247D028800C6DFCF /* CaseContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseContent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 				484A269524736C1100F28462 /* SceneDelegate.swift */,
 				484A269724736C1100F28462 /* ViewController.swift */,
 				484A269924736C1100F28462 /* Main.storyboard */,
+				6AA38237247D028800C6DFCF /* CaseContent.swift */,
 				484A269F24736C1300F28462 /* Assets.xcassets */,
 				484A26A124736C1300F28462 /* LaunchScreen.storyboard */,
 				484A26A424736C1300F28462 /* Info.plist */,
@@ -178,6 +181,7 @@
 				484A269824736C1100F28462 /* ViewController.swift in Sources */,
 				484A269E24736C1100F28462 /* Learner_App.xcdatamodeld in Sources */,
 				484A269424736C1100F28462 /* AppDelegate.swift in Sources */,
+				6AA38238247D028800C6DFCF /* CaseContent.swift in Sources */,
 				204EFA75247CBD2400ED3317 /* LearnTableViewCell.swift in Sources */,
 				20B69DA02474D07400D5F3AD /* MiniDatabase.swift in Sources */,
 				20B69DA22474D0E700D5F3AD /* UIViewController+Extension.swift in Sources */,
