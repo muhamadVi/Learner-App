@@ -21,8 +21,10 @@ extension UIViewController {
     
     func fillSubjectToCoreData() {
         
+        print("GAK KE ISI")
         if (Subject.fetchAll(context: getViewContext()).isEmpty){ //cek apakah subject sudah terisi apa belum
         
+        print("KE ISI")
         var subject : [Subject] = []
         //Subject 1
         let subject1 = Subject(context: getViewContext())

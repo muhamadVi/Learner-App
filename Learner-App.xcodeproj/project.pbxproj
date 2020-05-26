@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		20254263247CC32400571239 /* KDCircularProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20254262247CC32400571239 /* KDCircularProgress.swift */; };
 		2043BBC3247BF90F00B8932B /* LearnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2043BBC2247BF90F00B8932B /* LearnViewController.swift */; };
+		204EFA75247CBD2400ED3317 /* LearnTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204EFA74247CBD2400ED3317 /* LearnTableViewCell.swift */; };
 		20B69D9E2474CE7700D5F3AD /* Subject+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B69D9D2474CE7700D5F3AD /* Subject+Extension.swift */; };
 		20B69DA02474D07400D5F3AD /* MiniDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B69D9F2474D07400D5F3AD /* MiniDatabase.swift */; };
 		20B69DA22474D0E700D5F3AD /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B69DA12474D0E700D5F3AD /* UIViewController+Extension.swift */; };
@@ -18,11 +20,12 @@
 		484A269E24736C1100F28462 /* Learner_App.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 484A269C24736C1100F28462 /* Learner_App.xcdatamodeld */; };
 		484A26A024736C1300F28462 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 484A269F24736C1300F28462 /* Assets.xcassets */; };
 		484A26A324736C1300F28462 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 484A26A124736C1300F28462 /* LaunchScreen.storyboard */; };
-		7F63B98B247CC92000F71C19 /* CaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F63B98A247CC92000F71C19 /* CaseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		20254262247CC32400571239 /* KDCircularProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KDCircularProgress.swift; sourceTree = "<group>"; };
 		2043BBC2247BF90F00B8932B /* LearnViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnViewController.swift; sourceTree = "<group>"; };
+		204EFA74247CBD2400ED3317 /* LearnTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnTableViewCell.swift; sourceTree = "<group>"; };
 		20B69D9D2474CE7700D5F3AD /* Subject+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Subject+Extension.swift"; sourceTree = "<group>"; };
 		20B69D9F2474D07400D5F3AD /* MiniDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniDatabase.swift; sourceTree = "<group>"; };
 		20B69DA12474D0E700D5F3AD /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
@@ -35,7 +38,6 @@
 		484A269F24736C1300F28462 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		484A26A224736C1300F28462 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		484A26A424736C1300F28462 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7F63B98A247CC92000F71C19 /* CaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +51,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		20254264247CD74E00571239 /* LearnView */ = {
+			isa = PBXGroup;
+			children = (
+				2043BBC2247BF90F00B8932B /* LearnViewController.swift */,
+				204EFA74247CBD2400ED3317 /* LearnTableViewCell.swift */,
+			);
+			path = LearnView;
+			sourceTree = "<group>";
+		};
 		484A268724736C1100F28462 = {
 			isa = PBXGroup;
 			children = (
@@ -68,8 +79,7 @@
 		484A269224736C1100F28462 /* Learner-App */ = {
 			isa = PBXGroup;
 			children = (
-				7F63B98C247CC93E00F71C19 /* FeatureCase */,
-				484A26AB24739B9D00F28462 /* New Group */,
+				20254264247CD74E00571239 /* LearnView */,
 				484A26AA2473848400F28462 /* OnBoarding */,
 				484A269324736C1100F28462 /* AppDelegate.swift */,
 				484A269524736C1100F28462 /* SceneDelegate.swift */,
@@ -82,7 +92,7 @@
 				20B69D9D2474CE7700D5F3AD /* Subject+Extension.swift */,
 				20B69D9F2474D07400D5F3AD /* MiniDatabase.swift */,
 				20B69DA12474D0E700D5F3AD /* UIViewController+Extension.swift */,
-				2043BBC2247BF90F00B8932B /* LearnViewController.swift */,
+				20254262247CC32400571239 /* KDCircularProgress.swift */,
 			);
 			path = "Learner-App";
 			sourceTree = "<group>";
@@ -92,21 +102,6 @@
 			children = (
 			);
 			path = OnBoarding;
-			sourceTree = "<group>";
-		};
-		484A26AB24739B9D00F28462 /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "New Group";
-			sourceTree = "<group>";
-		};
-		7F63B98C247CC93E00F71C19 /* FeatureCase */ = {
-			isa = PBXGroup;
-			children = (
-				7F63B98A247CC92000F71C19 /* CaseViewController.swift */,
-			);
-			path = FeatureCase;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,12 +178,13 @@
 				484A269824736C1100F28462 /* ViewController.swift in Sources */,
 				484A269E24736C1100F28462 /* Learner_App.xcdatamodeld in Sources */,
 				484A269424736C1100F28462 /* AppDelegate.swift in Sources */,
+				204EFA75247CBD2400ED3317 /* LearnTableViewCell.swift in Sources */,
 				20B69DA02474D07400D5F3AD /* MiniDatabase.swift in Sources */,
 				20B69DA22474D0E700D5F3AD /* UIViewController+Extension.swift in Sources */,
+				20254263247CC32400571239 /* KDCircularProgress.swift in Sources */,
 				2043BBC3247BF90F00B8932B /* LearnViewController.swift in Sources */,
 				20B69D9E2474CE7700D5F3AD /* Subject+Extension.swift in Sources */,
 				484A269624736C1100F28462 /* SceneDelegate.swift in Sources */,
-				7F63B98B247CC92000F71C19 /* CaseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,7 +329,6 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = WX488TK3G3;
 				INFOPLIST_FILE = "Learner-App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -351,7 +346,6 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = WX488TK3G3;
 				INFOPLIST_FILE = "Learner-App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

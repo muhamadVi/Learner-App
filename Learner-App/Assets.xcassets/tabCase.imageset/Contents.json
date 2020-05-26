@@ -1,17 +1,29 @@
 {
   "images" : [
     {
+<<<<<<< HEAD
       "filename" : "􀁝.png",
+=======
+      "filename" : "tabCase.png",
+>>>>>>> master
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+<<<<<<< HEAD
       "filename" : "􀁝@2x.png",
+=======
+      "filename" : "tabCase2x.png",
+>>>>>>> master
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+<<<<<<< HEAD
       "filename" : "􀁝@3x.png",
+=======
+      "filename" : "tabCase 3x.png",
+>>>>>>> master
       "idiom" : "universal",
       "scale" : "3x"
     }
