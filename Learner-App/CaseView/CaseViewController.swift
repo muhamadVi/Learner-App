@@ -9,18 +9,13 @@
 import UIKit
 
 class CaseViewController: UIViewController {
-<<<<<<< Updated upstream
+
     @IBOutlet weak var ImageViewTopCase: UIImageView!
     @IBOutlet weak var LabelTitleCase: UILabel!
     @IBOutlet weak var ImageIconCase: UIImageView!
     @IBOutlet weak var TableViewCaseContent: UITableView!
     @IBOutlet weak var TabCase: UITabBarItem!
-=======
-    @IBOutlet weak var ImageViewBackground: UIImageView!
-    @IBOutlet weak var LabelTitleCase: UILabel!
-    @IBOutlet weak var ImageCaseIcon: UIImageView!
-    @IBOutlet weak var TableViewCaseOption: UITableView!
->>>>>>> Stashed changes
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
