@@ -24,6 +24,7 @@ class LearnViewController: UIViewController, UITableViewDelegate, UITableViewDat
         fillSubjectToCoreData()
         setLastProgress()
         getDataFromCoreData()
+        initOnClickLastProgress()
     }
     
     func initOnClickLastProgress(){
