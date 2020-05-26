@@ -39,6 +39,7 @@ extension Subject {
               newSubject.setValue(subject.subjectStepCurrent, forKey: "subjectStepCurrent")
               newSubject.setValue(subject.subjectStepTotal, forKey: "subjectStepTotal")
           }
+        print(subjectList)
           do {
               try context.save()
               print("Success")

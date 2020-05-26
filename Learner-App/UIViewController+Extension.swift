@@ -64,7 +64,7 @@ extension UIViewController {
         let subject2 = Subject(context: getViewContext())
         subject2.subjectID = UUID().uuidString
         subject2.subjectName = "Linear Intro 2"
-        subject2.subjectLevel = "Advance"
+        subject2.subjectLevel = "Intermediate"
         subject2.subjectProgress = 0
         subject2.subjectStepCurrent = 1
         subject2.subjectStepTotal = 10
@@ -93,7 +93,6 @@ extension UIViewController {
         
         subject.append(subject2) //tambahkan subject 1 ke list
         //End of Subject 2
-        
         
         Subject.saveListSubject(context: getViewContext(), subjectList: subject) // save semua subject yang udah di tambahkan
         }
