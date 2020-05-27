@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vED-1R-QGr">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vED-1R-QGr">
     <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -49,13 +49,17 @@
                                     <fragment content="LEARNEAR">
                                         <attributes>
                                             <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <font key="NSFont" size="40" name="SFProText-Bold"/>
+                                            <font key="NSFont" size="40" name="Silom"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Silver Logo" translatesAutoresizingMaskIntoConstraints="NO" id="40J-yK-set">
+                                <rect key="frame" x="54" y="290" width="307" height="262"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.2196078431372549" green="0.36470588235294116" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -91,14 +95,15 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wB8-Qk-Nxo">
-                                <rect key="frame" x="55" y="576" width="304" height="52"/>
+                                <rect key="frame" x="78" y="550" width="259" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <attributedString key="attributedText">
-                                    <fragment content="Belajar linear menjadi lebih mudah dengan satu aplikasi!">
+                                    <fragment content="Learning Linear is easier with only one application">
                                         <attributes>
-                                            <color key="NSColor" red="0.18221795560000001" green="0.2828723192" blue="0.53335899109999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                            <font key="NSFont" size="17" name="SFProText-Regular"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            <color key="NSColor" red="0.22705" green="0.35553000000000001" blue="0.66669999999999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="17" name="SFProText-Medium"/>
+                                            <real key="NSKern" value="-0.45000000000000001"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" minimumLineHeight="22" maximumLineHeight="22" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
                                         </attributes>
                                     </fragment>
                                 </attributedString>
@@ -122,6 +127,10 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Slides1" translatesAutoresizingMaskIntoConstraints="NO" id="Jff-P6-QHH">
+                                <rect key="frame" x="179" y="780" width="51" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="Hwo-Je-LGg"/>
@@ -164,20 +173,10 @@
                                 <rect key="frame" x="-107" y="104" width="629" height="688"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wit-iS-jLa">
-                                <rect key="frame" x="57" y="567" width="301" height="52"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Slides1" translatesAutoresizingMaskIntoConstraints="NO" id="SQS-Ay-Jdt">
+                                <rect key="frame" x="-136" y="114" width="90" height="17"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="Pelajari teori serta penerapannya dalam kehidupan nyata dan berlatihlah!">
-                                        <attributes>
-                                            <color key="NSColor" red="0.18221795560000001" green="0.2828723192" blue="0.53335899109999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                            <font key="NSFont" size="17" name="SFProText-Regular"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Onboarding 2 asset" translatesAutoresizingMaskIntoConstraints="NO" id="90l-zn-gwH">
                                 <rect key="frame" x="20" y="174" width="374" height="298"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -196,6 +195,25 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wit-iS-jLa">
+                                <rect key="frame" x="50" y="556" width="314" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Learn the theory, get to know the implementation in real life and practice!">
+                                        <attributes>
+                                            <color key="NSColor" red="0.22705" green="0.35553000000000001" blue="0.66669999999999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="17" name="SFProText-Medium"/>
+                                            <real key="NSKern" value="-0.45000000000000001"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" minimumLineHeight="22" maximumLineHeight="22" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Slides2" translatesAutoresizingMaskIntoConstraints="NO" id="Beg-Im-Ypu">
+                                <rect key="frame" x="182" y="780" width="51" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="xIR-FP-4Rn"/>
@@ -688,6 +706,9 @@
         <image name="Next button" width="292" height="57"/>
         <image name="Onboarding 1 asset" width="296" height="295"/>
         <image name="Onboarding 2 asset" width="270" height="257"/>
+        <image name="Silver Logo" width="90" height="97.5"/>
+        <image name="Slides1" width="74" height="8"/>
+        <image name="Slides2" width="74" height="8"/>
         <image name="panen pos" width="746" height="880"/>
         <image name="tabBarLearn" width="23" height="19"/>
         <image name="tabCase" width="23" height="23"/>
