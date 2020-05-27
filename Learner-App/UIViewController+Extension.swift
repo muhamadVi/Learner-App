@@ -19,6 +19,14 @@ extension UIViewController {
         return context
     }
     
+    func hideNavigationBar() {
+        self.navigationController?.setNavigationBarHidden(true, animated: true)
+    }
+    
+    func showNavigationBar() {
+        self.navigationController?.setNavigationBarHidden(false, animated: true)
+    }
+    
     func fillSubjectToCoreData() {
         
         print("GAK KE ISI")

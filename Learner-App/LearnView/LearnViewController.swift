@@ -15,11 +15,12 @@ class LearnViewController: UIViewController, UITableViewDelegate, UITableViewDat
     @IBOutlet weak var labelLastProgressLevel: UILabel!
     
     var subjectList: [Subject] = []
+    var mSubjectID = "nil"
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
+        hideNavigationBar()
        
         fillSubjectToCoreData()
         setLastProgress()
@@ -35,11 +36,13 @@ class LearnViewController: UIViewController, UITableViewDelegate, UITableViewDat
     func getDataFromCoreData(){
         subjectList = Subject.fetchAll(context: getViewContext())
         tableViewConfig()
-        print(subjectList)
+        print("ini dari learn view\(subjectList)")
     }
     
     @objc func onLastProgressClicked(sender : UITapGestureRecognizer) {
           performSegue(withIdentifier: "toDetailPage", sender: nil)
+        
+        MiniDatabase.setLastProgressID(lastProgressID: mSubjectID)
     }
     
     func tableViewConfig(){
@@ -54,6 +57,7 @@ class LearnViewController: UIViewController, UITableViewDelegate, UITableViewDat
             let subject = Subject.getDataEachById(context: getViewContext(), subjectID: subjectID!)
             labelLastProgressSubject.text = subject[0].subjectName
             labelLastProgressLevel.text = subject[0].subjectLevel
+            mSubjectID = subject[0].subjectID ?? "nil"
         }
     }
     
@@ -94,6 +98,7 @@ class LearnViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     override func viewWillAppear(_ animated: Bool) {
         setLastProgress()
+        hideNavigationBar()
     }
     
 //    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
