@@ -35,7 +35,7 @@ class LearnViewController: UIViewController, UITableViewDelegate, UITableViewDat
     func getDataFromCoreData(){
         subjectList = Subject.fetchAll(context: getViewContext())
         tableViewConfig()
-        print(subjectList)
+        print("ini dari learn view\(subjectList)")
     }
     
     @objc func onLastProgressClicked(sender : UITapGestureRecognizer) {
