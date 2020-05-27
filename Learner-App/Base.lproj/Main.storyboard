@@ -413,10 +413,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BackgrounAtas " translatesAutoresizingMaskIntoConstraints="NO" id="2tx-GG-ClJ">
-                                <rect key="frame" x="174" y="92" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CaseIcon" translatesAutoresizingMaskIntoConstraints="NO" id="uyQ-Gp-Mf1">
                                 <rect key="frame" x="20" y="152" width="38" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -443,12 +439,20 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BackgrounAtas " translatesAutoresizingMaskIntoConstraints="NO" id="2tx-GG-ClJ">
+                                <rect key="frame" x="174" y="76" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="o7X-wZ-mI5"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Case" image="tabCase" id="lt9-PA-BmS"/>
                     <connections>
+                        <outlet property="BackgroundImageCase" destination="2tx-GG-ClJ" id="vJ1-Yv-J8x"/>
+                        <outlet property="ImageViewCaseIcon" destination="uyQ-Gp-Mf1" id="8EG-00-KaB"/>
+                        <outlet property="LabelCaseTitle" destination="AnT-zE-zDy" id="5vz-nz-U99"/>
+                        <outlet property="TableViewCaseContent" destination="g0b-Wx-r77" id="lrF-oy-XO5"/>
                         <segue destination="hCG-q1-veT" kind="presentation" modalPresentationStyle="fullScreen" id="zIp-dZ-rZ2"/>
                     </connections>
                 </viewController>

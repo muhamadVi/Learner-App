@@ -9,7 +9,11 @@
 import UIKit
 
 class CaseViewController: UIViewController {
-
+    @IBOutlet weak var BackgroundImageCase: UIImageView!
+    @IBOutlet weak var LabelCaseTitle: UILabel!
+    @IBOutlet weak var ImageViewCaseIcon: UIImageView!
+    @IBOutlet weak var TableViewCaseContent: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
