@@ -30,14 +30,17 @@ class CaseTableViewCell: UITableViewCell {
         contentView.frame = contentView.frame.inset(by: margins)
     }
     
-     func changeColor(){
+     func changeViewCell(){
            switch LabelTitleCaseContent.text {
            case "Car":
-                CaseTableView.backgroundColor = #colorLiteral(red: 0.2156862745, green: 0.5529411765, blue: 0.2235294118, alpha: 0.16)
+                CaseTableView.backgroundColor = #colorLiteral(red: 0.5699979663, green: 0.6050838232, blue: 0.6172596812, alpha: 1)
+                ImageViewCaseContent.image = #imageLiteral(resourceName: "Car")
            case "Rice":
-                CaseTableView.backgroundColor = #colorLiteral(red: 0.2156862745, green: 0.5529411765, blue: 0.2235294118, alpha: 0.16)
+                CaseTableView.backgroundColor = #colorLiteral(red: 0, green: 0.83900249, blue: 1, alpha: 1)
+                ImageViewCaseContent.image = #imageLiteral(resourceName: "rice")
            default:
                 CaseTableView.backgroundColor = #colorLiteral(red: 0.2156862745, green: 0.5529411765, blue: 0.2235294118, alpha: 0.16)
            }
        }
+
 }

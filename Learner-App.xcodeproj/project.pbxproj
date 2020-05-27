@@ -26,6 +26,7 @@
 		7F1DADD4247DF94500A9DE7C /* CaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1DADD3247DF94500A9DE7C /* CaseViewController.swift */; };
 		7F1DADD7247DFB6C00A9DE7C /* CaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1DADD5247DFB6C00A9DE7C /* CaseTableViewCell.swift */; };
 		7F1DADD8247DFB6C00A9DE7C /* CaseTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F1DADD6247DFB6C00A9DE7C /* CaseTableViewCell.xib */; };
+		7F1DADDA247E223000A9DE7C /* Case+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1DADD9247E223000A9DE7C /* Case+Extension.swift */; };
 		924E6BD4247D647400FB0C59 /* welcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924E6BD3247D647400FB0C59 /* welcomeVC.swift */; };
 		924E6BD6247D64A700FB0C59 /* onboarding1VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924E6BD5247D64A700FB0C59 /* onboarding1VC.swift */; };
 		924E6BD8247D64DF00FB0C59 /* onboarding2VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924E6BD7247D64DF00FB0C59 /* onboarding2VC.swift */; };
@@ -53,6 +54,7 @@
 		7F1DADD3247DF94500A9DE7C /* CaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseViewController.swift; sourceTree = "<group>"; };
 		7F1DADD5247DFB6C00A9DE7C /* CaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseTableViewCell.swift; sourceTree = "<group>"; };
 		7F1DADD6247DFB6C00A9DE7C /* CaseTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CaseTableViewCell.xib; sourceTree = "<group>"; };
+		7F1DADD9247E223000A9DE7C /* Case+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Case+Extension.swift"; sourceTree = "<group>"; };
 		924E6BD3247D647400FB0C59 /* welcomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = welcomeVC.swift; sourceTree = "<group>"; };
 		924E6BD5247D64A700FB0C59 /* onboarding1VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = onboarding1VC.swift; sourceTree = "<group>"; };
 		924E6BD7247D64DF00FB0C59 /* onboarding2VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = onboarding2VC.swift; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 				20B69D9F2474D07400D5F3AD /* MiniDatabase.swift */,
 				20B69DA12474D0E700D5F3AD /* UIViewController+Extension.swift */,
 				20254262247CC32400571239 /* KDCircularProgress.swift */,
+				7F1DADD9247E223000A9DE7C /* Case+Extension.swift */,
 			);
 			path = "Learner-App";
 			sourceTree = "<group>";
@@ -237,6 +240,7 @@
 				20B69D9E2474CE7700D5F3AD /* Subject+Extension.swift in Sources */,
 				7F1DADD4247DF94500A9DE7C /* CaseViewController.swift in Sources */,
 				484A269624736C1100F28462 /* SceneDelegate.swift in Sources */,
+				7F1DADDA247E223000A9DE7C /* Case+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

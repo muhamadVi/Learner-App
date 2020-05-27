@@ -8,7 +8,8 @@
 
 import UIKit
 
-class CaseViewController: UIViewController {
+class CaseViewController: UIViewController, UITableViewDelegate  {
+    
     @IBOutlet weak var BackgroundImageCase: UIImageView!
     @IBOutlet weak var LabelCaseTitle: UILabel!
     @IBOutlet weak var ImageViewCaseIcon: UIImageView!
