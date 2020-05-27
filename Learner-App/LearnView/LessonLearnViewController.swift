@@ -28,7 +28,7 @@ class LessonLearnViewController: UIViewController {
 
         webkitLessonLearn()
         setLastProgress()
-        
+        showNavigationBar()
      //self.lessonProgressView.progress = Float(currentProgress)
      //self.perform(#selector(updateProgressView), with: nil, afterDelay: 1)
         

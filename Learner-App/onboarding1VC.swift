@@ -15,7 +15,7 @@ class onboarding1VC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+ hideNavigationBar()
         // Do any additional setup after loading the view.
     }
     

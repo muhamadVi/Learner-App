@@ -15,7 +15,8 @@ class CaseContent: UIViewController {
     @IBOutlet weak var segmentType: UISegmentedControl!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+  showNavigationBar()
         // Do any additional setup after loading the view.
     }
     
@@ -34,6 +35,11 @@ class CaseContent: UIViewController {
         default:
             graphImage.image = #imageLiteral(resourceName: "panen pos")
         }
+    }
+    
+    
+    override func viewWillAppear(_ animated: Bool) {
+        showNavigationBar()
     }
     
     /*
