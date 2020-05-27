@@ -17,20 +17,21 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Car" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lqZ-cv-n0I">
-                        <rect key="frame" x="16" y="12" width="27" height="21"/>
+                        <rect key="frame" x="16" y="12" width="37" height="27"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Car" translatesAutoresizingMaskIntoConstraints="NO" id="Z8o-6y-KfR">
-                        <rect key="frame" x="202" y="-1" width="118" height="97"/>
+                        <rect key="frame" x="202" y="-3" width="118" height="97"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     </imageView>
                 </subviews>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="CaseTableView" destination="H2p-sc-9uM" id="Fid-0Z-OnV"/>
                 <outlet property="ImageViewCaseContent" destination="Z8o-6y-KfR" id="w9R-nm-pq0"/>
                 <outlet property="LabelTitleCaseContent" destination="lqZ-cv-n0I" id="Qeg-CT-lF7"/>
             </connections>
