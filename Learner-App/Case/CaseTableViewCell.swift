@@ -11,6 +11,7 @@ import UIKit
 class CaseTableViewCell: UITableViewCell {
     @IBOutlet weak var LabelTitleCaseContent: UILabel!
     @IBOutlet weak var ImageViewCaseContent: UIImageView!
+    @IBOutlet weak var CaseTableView: CaseTableViewCell!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -29,7 +30,14 @@ class CaseTableViewCell: UITableViewCell {
         contentView.frame = contentView.frame.inset(by: margins)
     }
     
-    func cellConfig(){
-        
-    }
+     func changeColor(){
+           switch LabelTitleCaseContent.text {
+           case "Car":
+                CaseTableView.backgroundColor = #colorLiteral(red: 0.2156862745, green: 0.5529411765, blue: 0.2235294118, alpha: 0.16)
+           case "Rice":
+                CaseTableView.backgroundColor = #colorLiteral(red: 0.2156862745, green: 0.5529411765, blue: 0.2235294118, alpha: 0.16)
+           default:
+                CaseTableView.backgroundColor = #colorLiteral(red: 0.2156862745, green: 0.5529411765, blue: 0.2235294118, alpha: 0.16)
+           }
+       }
 }
