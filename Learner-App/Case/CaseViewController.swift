@@ -8,17 +8,25 @@
 
 import UIKit
 
-class CaseViewController: UIViewController, UITableViewDelegate  {
+class CaseViewController: UIViewController, UITableViewDelegate, UITableViewDataSource  {
     
+   
     @IBOutlet weak var BackgroundImageCase: UIImageView!
     @IBOutlet weak var LabelCaseTitle: UILabel!
     @IBOutlet weak var ImageViewCaseIcon: UIImageView!
-    @IBOutlet weak var TableViewCaseContent: UITableView!
+    @IBOutlet weak var tableViewCaseContent: UITableView!
+    
+    
+    var casesList: [Cases] = []
+    var mCasesID = "nil"
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         hideNavigationBar()
+        getDataFromCoreData()
+        fillCasesToCoreData()
+        //setupUI()
         // Do any additional setup after loading the view.
     }
     
@@ -26,6 +34,45 @@ class CaseViewController: UIViewController, UITableViewDelegate  {
     override func viewWillAppear(_ animated: Bool) {
         hideNavigationBar()
     }
+    
+    func getDataFromCoreData(){
+        casesList = Cases.fetchAll(context: getViewContext())
+        tableViewConfig()
+        print("ini dari learn view\(casesList)")
+    }
+    
+    func tableViewConfig(){
+        tableViewCaseContent.dataSource = self
+        tableViewCaseContent.delegate = self
+        tableViewCaseContent.separatorStyle = UITableViewCell.SeparatorStyle.none
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return casesList.count
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 100
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "CaseTableViewCell", for: indexPath) as? CaseTableViewCell {
+            let cases = casesList[indexPath.row]
+            cell.LabelTitleCaseContent.text = cases.casesTitle
+            cell.changeViewCell()
+            return cell
+        }
+        return CaseTableViewCell()
+    }
+    
+    
+    
+    
+    //func setupUI() {
+     //   TableViewCaseContent.register(UINib(nibName: "CaseTableViewCell", bundle: nil), forCellReuseIdentifier: "CaseTableViewCell")
+   // }
+    
+    
 
     /*
     // MARK: - Navigation

@@ -105,4 +105,18 @@ extension UIViewController {
         Subject.saveListSubject(context: getViewContext(), subjectList: subject) // save semua subject yang udah di tambahkan
         }
     }
+    
+    func fillCasesToCoreData(){
+        var cases : [Cases] = []
+        
+        //Add cases rice
+        let cases1 = Cases(context: getViewContext())
+        cases1.casesID = UUID().uuidString
+        cases1.casesTitle = "Car"
+        
+        
+        let cases2 = Cases(context: getViewContext())
+        cases2.casesID = UUID().uuidString
+        cases2.casesTitle = "Rice"
+    }
 }
