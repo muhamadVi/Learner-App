@@ -11,9 +11,9 @@ import CoreData
 
 extension Cases {
 
-    static func saveCase(context : NSManagedObjectContext, casesContent: Cases) -> Cases? {
+    static func saveCases(context : NSManagedObjectContext, cases: Cases) -> Cases? {
         var casesIn = Cases(context: context)
-        casesIn = casesContent
+        casesIn = cases
         
         do {
             try context.save()
@@ -23,11 +23,12 @@ extension Cases {
         }
     }
     
-    static func saveListCase(context : NSManagedObjectContext, casesList : [Cases]) {
+    
+    static func saveListCases(context : NSManagedObjectContext, casesList : [Cases]) {
           for cases in casesList {
-              let newCase = NSEntityDescription.insertNewObject(forEntityName: "Cases", into: context)
-              newCase.setValue(cases.casesID, forKey: "casesID")
-              newCase.setValue(cases.casesTitle, forKey: "casesTitle")
+              let newCases = NSEntityDescription.insertNewObject(forEntityName: "Cases", into: context)
+              newCases.setValue(cases.casesID, forKey: "casesID")
+              newCases.setValue(cases.casesTitle, forKey: "casesTitle")
           }
         print(casesList)
           do {
@@ -38,7 +39,8 @@ extension Cases {
           }
     }
     
-    static func fetchAll(context : NSManagedObjectContext) -> [Cases] {
+    //Ambil data dari cases entity di core data
+    static func fetchAllData(context : NSManagedObjectContext) -> [Cases] {
         let request: NSFetchRequest<Cases> = Cases.fetchRequest()
         //        let predicate = NSPredicate(format: "taskName BEGINSWITH 'm'")
         do {
@@ -50,14 +52,14 @@ extension Cases {
     }
     
     
-    static func getDataEachById(context : NSManagedObjectContext, casesID : String) -> [Cases] {
-        let request: NSFetchRequest<Cases> = Cases.fetchRequest()
-        let predicate = NSPredicate(format: "casesID = %@", casesID)
-        request.predicate = predicate
-        do {
-            return try context.fetch(request)
-        } catch {
-            return []
-        }
-    }
+    //static func getDataEachById(context : NSManagedObjectContext, casesID : String) -> [Cases] {
+      //  let request: NSFetchRequest<Cases> = Cases.fetchRequest()
+      //  let predicate = NSPredicate(format: "casesID = %@", casesID)
+      //  request.predicate = predicate
+      //  do {
+      //      return try context.fetch(request)
+      //  } catch {
+      //      return []
+      //  }
+    // }
 }

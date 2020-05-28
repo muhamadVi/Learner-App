@@ -26,9 +26,8 @@
 		4893E5CA247D3C4D00619181 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4893E5C9247D3C4D00619181 /* WebKit.framework */; };
 		6AA38238247D028800C6DFCF /* CaseContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA38237247D028800C6DFCF /* CaseContent.swift */; };
 		7F1DADD4247DF94500A9DE7C /* CaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1DADD3247DF94500A9DE7C /* CaseViewController.swift */; };
-		7F1DADD7247DFB6C00A9DE7C /* CaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1DADD5247DFB6C00A9DE7C /* CaseTableViewCell.swift */; };
-		7F1DADD8247DFB6C00A9DE7C /* CaseTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F1DADD6247DFB6C00A9DE7C /* CaseTableViewCell.xib */; };
 		7F1DADDA247E223000A9DE7C /* Cases+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1DADD9247E223000A9DE7C /* Cases+Extension.swift */; };
+		7F36D313247F5CCD00567CA8 /* CaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F36D312247F5CCD00567CA8 /* CaseTableViewCell.swift */; };
 		924E6BD4247D647400FB0C59 /* welcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924E6BD3247D647400FB0C59 /* welcomeVC.swift */; };
 		924E6BD6247D64A700FB0C59 /* onboarding1VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924E6BD5247D64A700FB0C59 /* onboarding1VC.swift */; };
 		924E6BD8247D64DF00FB0C59 /* onboarding2VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 924E6BD7247D64DF00FB0C59 /* onboarding2VC.swift */; };
@@ -56,9 +55,8 @@
 		4893E5C9247D3C4D00619181 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		6AA38237247D028800C6DFCF /* CaseContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseContent.swift; sourceTree = "<group>"; };
 		7F1DADD3247DF94500A9DE7C /* CaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseViewController.swift; sourceTree = "<group>"; };
-		7F1DADD5247DFB6C00A9DE7C /* CaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseTableViewCell.swift; sourceTree = "<group>"; };
-		7F1DADD6247DFB6C00A9DE7C /* CaseTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CaseTableViewCell.xib; sourceTree = "<group>"; };
 		7F1DADD9247E223000A9DE7C /* Cases+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Cases+Extension.swift"; sourceTree = "<group>"; };
+		7F36D312247F5CCD00567CA8 /* CaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseTableViewCell.swift; sourceTree = "<group>"; };
 		924E6BD3247D647400FB0C59 /* welcomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = welcomeVC.swift; sourceTree = "<group>"; };
 		924E6BD5247D64A700FB0C59 /* onboarding1VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = onboarding1VC.swift; sourceTree = "<group>"; };
 		924E6BD7247D64DF00FB0C59 /* onboarding2VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = onboarding2VC.swift; sourceTree = "<group>"; };
@@ -159,8 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				7F1DADD3247DF94500A9DE7C /* CaseViewController.swift */,
-				7F1DADD5247DFB6C00A9DE7C /* CaseTableViewCell.swift */,
-				7F1DADD6247DFB6C00A9DE7C /* CaseTableViewCell.xib */,
+				7F36D312247F5CCD00567CA8 /* CaseTableViewCell.swift */,
 			);
 			path = Case;
 			sourceTree = "<group>";
@@ -224,7 +221,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				484A26A324736C1300F28462 /* LaunchScreen.storyboard in Resources */,
-				7F1DADD8247DFB6C00A9DE7C /* CaseTableViewCell.xib in Resources */,
 				482C8137247EA74000AE7529 /* LessonWebView.html in Resources */,
 				484A26A024736C1300F28462 /* Assets.xcassets in Resources */,
 				484A269B24736C1100F28462 /* Main.storyboard in Resources */,
@@ -240,7 +236,7 @@
 			files = (
 				4839A0D6247F2AAD0044C968 /* QuestionViewController.swift in Sources */,
 				484A269824736C1100F28462 /* ViewController.swift in Sources */,
-				7F1DADD7247DFB6C00A9DE7C /* CaseTableViewCell.swift in Sources */,
+				7F36D313247F5CCD00567CA8 /* CaseTableViewCell.swift in Sources */,
 				484A269E24736C1100F28462 /* Learner_App.xcdatamodeld in Sources */,
 				484A269424736C1100F28462 /* AppDelegate.swift in Sources */,
 				924E6BD4247D647400FB0C59 /* welcomeVC.swift in Sources */,

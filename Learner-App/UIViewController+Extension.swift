@@ -93,8 +93,8 @@ extension UIViewController {
         
         subject.append(subject2) //tambahkan subject 1 ke list
         //End of Subject 2
-        
-        Subject.saveListSubject(context: getViewContext(), subjectList: subject) // save semua subject yang udah di tambahkan
+            print(subject.count)
+//        Subject.saveListSubject(context: getViewContext(), subjectList: subject) // save semua subject yang udah di tambahkan
         }
     }
     
@@ -106,9 +106,15 @@ extension UIViewController {
         cases1.casesID = UUID().uuidString
         cases1.casesTitle = "Car"
         
+        cases.append(cases1)
+        
         
         let cases2 = Cases(context: getViewContext())
         cases2.casesID = UUID().uuidString
         cases2.casesTitle = "Rice"
+        
+        cases.append(cases2)
+        
+        Cases.saveListCases(context: getViewContext(), casesList: cases)
     }
 }
