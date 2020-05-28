@@ -9,22 +9,6 @@
 import UIKit
 
 class CaseViewController: UIViewController, UITableViewDelegate, UITableViewDataSource  {
-   
-    
-     /*  func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if let cell = tableView.dequeueReusableCell(withIdentifier: "LearnTableViewCell", for: indexPath) as? LearnTableViewCell {
-            let subject = subjectList[indexPath.row]
-            cell.labelSubjectLevel.text = subject.subjectLevel
-            cell.labelSubjectTitle.text = subject.subjectName
-            cell.labelSubjectProgress.text = "\(subject.subjectProgress)%"
-            cell.circleSubjectProgress.angle = changePercentToDegree(percent: Double(subject.subjectProgress))
-                  //persen/100 * 360 ini jadi degree
-            cell.changeColor()
-            return cell
-        }
-        return LearnTableViewCell()
-    }
- */
     
    
     @IBOutlet weak var backgroundImageCase: UIImageView!
@@ -89,18 +73,6 @@ class CaseViewController: UIViewController, UITableViewDelegate, UITableViewData
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 200
     }
-    
-    //Show data by index
-    
-    //Register the cell view to the controller
-    
-    
-    
-    
-    //func setupUI() {
-     //   TableViewCaseContent.register(UINib(nibName: "CaseTableViewCell", bundle: nil), forCellReuseIdentifier: "CaseTableViewCell")
-   // }
-    
     
 
     /*

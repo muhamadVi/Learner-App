@@ -27,13 +27,13 @@ class CaseContent: UIViewController {
         
         switch (getIndex) {
         case 0:
-            graphImage.image = #imageLiteral(resourceName: "panen pos")
+            graphImage.image = #imageLiteral(resourceName: "car positive")
         case 1:
-            graphImage.image = #imageLiteral(resourceName: "panen neg")
+            graphImage.image = #imageLiteral(resourceName: "car negative")
         case 2:
-            graphImage.image = #imageLiteral(resourceName: "panen tak")
+            graphImage.image = #imageLiteral(resourceName: "car uncertain")
         default:
-            graphImage.image = #imageLiteral(resourceName: "panen pos")
+            graphImage.image = #imageLiteral(resourceName: "car positive")
         }
     }
     
