@@ -496,7 +496,7 @@
                         <outlet property="imageViewCaseIcon" destination="uyQ-Gp-Mf1" id="8EG-00-KaB"/>
                         <outlet property="labelCaseTitle" destination="AnT-zE-zDy" id="5vz-nz-U99"/>
                         <outlet property="tableViewCaseContent" destination="g0b-Wx-r77" id="lrF-oy-XO5"/>
-                        <segue destination="hCG-q1-veT" kind="show" identifier="toCaseContent" id="zIp-dZ-rZ2"/>
+                        <segue destination="hCG-q1-veT" kind="show" identifier="toCasesContent" id="zIp-dZ-rZ2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RXz-KN-Q2L" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
