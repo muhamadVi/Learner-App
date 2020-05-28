@@ -9,17 +9,30 @@
 import UIKit
 
 class CaseContent: UIViewController {
-
+    
     @IBOutlet weak var graphImage: UIImageView!
     
     @IBOutlet weak var segmentType: UISegmentedControl!
+    
+    var titleCase = ""
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-  showNavigationBar()
+        titleCase = MiniDatabase.getClickedCaseTitle()
+        showNavigationBar()
         // Do any additional setup after loading the view.
+        decideCase()
+        setNavBar(title : titleCase)
     }
     
+ 
+    
+    func decideCase(){
+        if titleCase == "Driver" {
+            graphImage.image = #imageLiteral(resourceName: "car positive")
+        } else if titleCase == "Farmer" {
+            graphImage.image = #imageLiteral(resourceName: "rice positive")
+        }
+    }
     @IBAction func segmentTap(_ sender: Any) {
         
         let getIndex = segmentType.selectedSegmentIndex
@@ -27,13 +40,29 @@ class CaseContent: UIViewController {
         
         switch (getIndex) {
         case 0:
-            graphImage.image = #imageLiteral(resourceName: "car positive")
+            if titleCase == "Driver" {
+                graphImage.image = #imageLiteral(resourceName: "car positive")
+            } else if titleCase == "Farmer" {
+                graphImage.image = #imageLiteral(resourceName: "rice positive")
+            }
         case 1:
-            graphImage.image = #imageLiteral(resourceName: "car negative")
+            if titleCase == "Driver" {
+                graphImage.image = #imageLiteral(resourceName: "car negative")
+            } else if titleCase == "Farmer" {
+                graphImage.image = #imageLiteral(resourceName: "rice negative")
+            }
         case 2:
-            graphImage.image = #imageLiteral(resourceName: "car uncertain")
+            if titleCase == "Driver" {
+                graphImage.image = #imageLiteral(resourceName: "car uncertain")
+            } else if titleCase == "Farmer" {
+                graphImage.image = #imageLiteral(resourceName: "rice uncertain")
+            }
         default:
-            graphImage.image = #imageLiteral(resourceName: "car positive")
+            if titleCase == "Driver" {
+                graphImage.image = #imageLiteral(resourceName: "car positive")
+            } else if titleCase == "Farmer" {
+                graphImage.image = #imageLiteral(resourceName: "rice positive")
+            }
         }
     }
     
@@ -43,13 +72,13 @@ class CaseContent: UIViewController {
     }
     
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destination.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }

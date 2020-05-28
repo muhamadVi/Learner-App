@@ -657,6 +657,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="S3L-z1-ZSg"/>
                     <connections>
+                        <outlet property="btnSubmitQuestion" destination="Mwr-d4-VoT" id="lrc-5M-ZEZ"/>
                         <outlet property="currentStep" destination="wrR-3T-NTy" id="NGe-De-dyZ"/>
                         <outlet property="imageLesson" destination="G4a-ie-m5F" id="oXa-aQ-eeV"/>
                         <outlet property="imageQuestion" destination="dV6-pR-bRE" id="ceL-B1-8oD"/>
@@ -715,7 +716,6 @@
                     </view>
                     <navigationItem key="navigationItem" id="Gel-nR-pLO"/>
                     <connections>
-                        <outlet property="buttonSubmit" destination="Mwr-d4-VoT" id="hEQ-hs-by2"/>
                         <outlet property="imageQuestion" destination="dV6-pR-bRE" id="ajt-RJ-M8A"/>
                         <outlet property="imageStatusAnswer" destination="hXL-o6-V6B" id="h3s-RQ-h4d"/>
                         <outlet property="labelCurrentStep" destination="8ga-C4-7VZ" id="np6-8b-PCL"/>

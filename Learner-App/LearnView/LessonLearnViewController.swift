@@ -20,6 +20,7 @@ class LessonLearnViewController: UIViewController {
     @IBOutlet weak var textFieldAnswer: UITextField!
     @IBOutlet weak var imageQuestion: UIImageView!
     
+    @IBOutlet weak var btnSubmitQuestion: UIButton!
     var stepTotal = 0
     var currentProgress = 0
     var setProgress = 0
@@ -33,9 +34,13 @@ class LessonLearnViewController: UIViewController {
         setLastProgress()
         showNavigationBar()
         
-        
+
+    }
+    
+    @IBAction func submit(_ sender: Any) {
         
     }
+    
     func setLastProgress(){
         let subjectID : String? = MiniDatabase.getLastProgressID()
         if subjectID != "nil" {
@@ -48,9 +53,10 @@ class LessonLearnViewController: UIViewController {
             mSubject = subject[0]
             
             
-            
+
+            setNavBar(title: String(subject[0].subjectName!))
             //updating progressview
-            //            updateProgressView()
+                        updateProgressView()
         }
     }
     
@@ -76,13 +82,13 @@ class LessonLearnViewController: UIViewController {
     }
     
     func updateProgressView() {
-        lessonProgressView.transform = lessonProgressView.transform.scaledBy(x: 1, y: 5)
+//        lessonProgressView.transform = lessonProgressView.transform.scaledBy(x: 1, y: 5)
         totalStep.text = String(stepTotal)
         currentStep.text = String(currentProgress)
         setProgress = Int((Float(currentProgress) / Float(stepTotal)) * 100)
         
         
-        lessonProgressView.progress = Float(Float(currentProgress)/10.0)
+        lessonProgressView.progress = Float(Float(currentProgress)/Float(stepTotal))
          decideQuestionOrLesson(subject : mSubject!)
         
     }
@@ -117,9 +123,9 @@ class LessonLearnViewController: UIViewController {
             imageQuestion.isHidden = false
             textFieldAnswer.isHidden = false
             statusAnswer.isHidden = false
-//            btnSubmitQuestion.isHidden = false
+            btnSubmitQuestion.isHidden = false
             
-            imageLesson.isHidden = false
+            imageLesson.isHidden = true
             
             
         }
@@ -127,29 +133,16 @@ class LessonLearnViewController: UIViewController {
         func setLesson(lessonParam : Lesson) {
 
             imageLesson.image = UIImage(named: lessonParam.lesson ?? "")
-    //        totalStep.isHidden = true
             
-//            updateProgressView()
+                       imageLesson.isHidden = false
+                       textFieldAnswer.isHidden = true
+                       statusAnswer.isHidden = true
+                       btnSubmitQuestion.isHidden = true
+                       
+                       imageQuestion.isHidden = true
         }
     
-    func intermediate() {
-        //        updateProgressView()
-    }
-    
-    
-    
-    func lesson1() {
-        
-        //        imageLesson.image = UIImage(named: subject[0].lesson)
-    }
-    
-    func lesson2() {
-        //        imageLesson.image = UIImage(named: subject[0].lesson)
-    }
-    
-    func question1() {
-        
-    }
+ 
     
     
     

@@ -27,6 +27,13 @@ extension UIViewController {
         self.navigationController?.setNavigationBarHidden(false, animated: true)
     }
     
+    func setNavBar(title: String){
+         self.title = title
+         navigationController?.navigationBar.barTintColor = #colorLiteral(red: 0.2196078431, green: 0.3647058824, blue: 0.6666666667, alpha: 1)
+         navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
+         navigationController?.navigationBar.tintColor = UIColor.white
+     }
+    
     func fillSubjectToCoreData() {
         
         print("GAK KE ISI")
@@ -102,7 +109,7 @@ extension UIViewController {
             subject.append(subject2) //tambahkan subject 1 ke list
             //End of Subject 2
             print(subject.count)
-            //        Subject.saveListSubject(context: getViewContext(), subjectList: subject) // save semua subject yang udah di tambahkan
+                    Subject.saveListSubject(context: getViewContext(), subjectList: subject) // save semua subject yang udah di tambahkan
         }
     }
     
