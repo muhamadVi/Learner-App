@@ -27,7 +27,7 @@ class CaseContent: UIViewController {
         
         switch (getIndex) {
         case 0:
-            graphImage.image = 
+            graphImage.image =
         case 1:
             graphImage.image = #imageLiteral(resourceName: "panen neg")
         case 2:
