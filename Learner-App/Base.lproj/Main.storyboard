@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="r21-WU-Bik">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vED-1R-QGr">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -621,6 +621,7 @@
                         <outlet property="lessonProgressView" destination="fKg-6A-NvH" id="n2H-u5-YgY"/>
                         <outlet property="material" destination="oKz-RA-tJN" id="Ntx-oO-gJa"/>
                         <outlet property="totalStep" destination="qJl-Wu-0yb" id="c88-9U-ur5"/>
+                        <segue destination="DoP-e8-AVb" kind="show" id="j8l-ef-AaB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nPS-Re-oND" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

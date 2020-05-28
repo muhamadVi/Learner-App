@@ -34,9 +34,9 @@ class LearnViewController: UIViewController, UITableViewDelegate, UITableViewDat
     }
     
     func getDataFromCoreData(){
-        subjectList = Subject.fetchAll(context: getViewContext())
+        subjectList = Subject.fetchAll(context: getViewContext()).reversed()
         tableViewConfig()
-        print("ini dari learn view\(subjectList)")
+//        print("ini dari learn view\(subjectList)")
     }
     
     @objc func onLastProgressClicked(sender : UITapGestureRecognizer) {
@@ -58,6 +58,8 @@ class LearnViewController: UIViewController, UITableViewDelegate, UITableViewDat
             labelLastProgressSubject.text = subject[0].subjectName
             labelLastProgressLevel.text = subject[0].subjectLevel
             mSubjectID = subject[0].subjectID ?? "nil"
+            
+//            let question = subject[0].questionRelationship?.allObjects as! [Question]
         }
     }
     
@@ -91,7 +93,7 @@ class LearnViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let subject = subjectList[indexPath.row]
-        performSegue(withIdentifier: "toCasesContent", sender: subject)
+        performSegue(withIdentifier: "toDetailPage", sender: subject)
         MiniDatabase.setLastProgressID(lastProgressID: subject.subjectID ?? "nil")
     }
     

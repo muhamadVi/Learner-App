@@ -101,8 +101,8 @@ extension UIViewController {
         
         subject.append(subject2) //tambahkan subject 1 ke list
         //End of Subject 2
-        
-        Subject.saveListSubject(context: getViewContext(), subjectList: subject) // save semua subject yang udah di tambahkan
+            print(subject.count)
+//        Subject.saveListSubject(context: getViewContext(), subjectList: subject) // save semua subject yang udah di tambahkan
         }
     }
     
