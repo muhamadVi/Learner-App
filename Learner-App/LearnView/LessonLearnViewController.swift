@@ -21,6 +21,9 @@ class LessonLearnViewController: UIViewController {
     @IBOutlet weak var imageQuestion: UIImageView!
     
     @IBOutlet weak var btnSubmitQuestion: UIButton!
+    
+    var answerFromTheQuestion = ""
+    
     var stepTotal = 0
     var currentProgress = 0
     var setProgress = 0
@@ -36,10 +39,21 @@ class LessonLearnViewController: UIViewController {
         
 
     }
-    
-    @IBAction func submit(_ sender: Any) {
-        
+    @IBAction func btnSubmit(_ sender: Any) {
+        if textFieldAnswer.text == answerFromTheQuestion {
+            statusAnswer.isHidden = false
+            print("masuk if true")
+            statusAnswer.image = #imageLiteral(resourceName: "correct")
+            
+            
+        } else {
+            statusAnswer.image = #imageLiteral(resourceName: "wrong")
+            print("masuk false")
+            statusAnswer.isHidden = false
+            
+        }
     }
+    
     
     func setLastProgress(){
         let subjectID : String? = MiniDatabase.getLastProgressID()
@@ -60,15 +74,7 @@ class LessonLearnViewController: UIViewController {
         }
     }
     
-    //    func setQuestion(subject : Subject){
-    //        let question = subject.questionRelationship?.allObjects as! [Question]
-    //        for questionEach in question {
-    //            let step = questionEach.step
-    //            cekQuestion(step, que);
-    //        }
-    //        imageQuestion = question[0].answer
-    //    }
-    
+
     
     
     @IBAction func nextLesson(_ sender: Any) {
@@ -82,7 +88,7 @@ class LessonLearnViewController: UIViewController {
     }
     
     func updateProgressView() {
-//        lessonProgressView.transform = lessonProgressView.transform.scaledBy(x: 1, y: 5)
+
         totalStep.text = String(stepTotal)
         currentStep.text = String(currentProgress)
         setProgress = Int((Float(currentProgress) / Float(stepTotal)) * 100)
@@ -116,16 +122,18 @@ class LessonLearnViewController: UIViewController {
     
       func setQuestion(questionParam : Question) {
 
-            imageQuestion.image = UIImage(named: questionParam.question ?? "")
-            
-            
-            
-            imageQuestion.isHidden = false
-            textFieldAnswer.isHidden = false
-            statusAnswer.isHidden = false
-            btnSubmitQuestion.isHidden = false
-            
-            imageLesson.isHidden = true
+        imageQuestion.image = UIImage(named: questionParam.question ?? "")
+        
+        answerFromTheQuestion = questionParam.answer ?? ""
+        
+        imageQuestion.isHidden = false
+        textFieldAnswer.isHidden = false
+        statusAnswer.isHidden = false
+        btnSubmitQuestion.isHidden = false
+        
+        statusAnswer.isHidden = true
+        
+        imageLesson.isHidden = true
             
             
         }
@@ -134,12 +142,14 @@ class LessonLearnViewController: UIViewController {
 
             imageLesson.image = UIImage(named: lessonParam.lesson ?? "")
             
-                       imageLesson.isHidden = false
-                       textFieldAnswer.isHidden = true
-                       statusAnswer.isHidden = true
-                       btnSubmitQuestion.isHidden = true
+            imageLesson.isHidden = false
+            textFieldAnswer.isHidden = true
+            statusAnswer.isHidden = true
+            btnSubmitQuestion.isHidden = true
+            
+            statusAnswer.isHidden = true
                        
-                       imageQuestion.isHidden = true
+            imageQuestion.isHidden = true
         }
     
  
@@ -148,37 +158,7 @@ class LessonLearnViewController: UIViewController {
     
     
     
-    //
-    //    func webkitLessonLearn() {
-    //        let html = """
-    //                    <div class="jumbotron text-center">
-    //                      <h1>My First Bootstrap Page</h1>
-    //                      <p>Resize this responsive page to see the effect!</p>
-    //                    </div>
-    //
-    //                    <div class="container">
-    //                      <div class="row">
-    //                        <div class="col-sm-4">
-    //                          <h3>Column 1</h3>
-    //                          <p>Lorem ipsum dolor..</p>
-    //                        </div>
-    //                        <div class="col-sm-4">
-    //                          <h3>Column 2</h3>
-    //                          <p>Lorem ipsum dolor..</p>
-    //                        </div>
-    //                        <div class="col-sm-4">
-    //                          <h3>Column 3</h3>
-    //                          <p>Lorem ipsum dolor..</p>
-    //                        </div>
-    //                      </div>
-    //                    </div>
-    //                    """
-    //        material.loadHTMLString(html, baseURL: nil)
-    //
-    //        let url = URL(string: "https://blog.ruangguru.com/matematika-kelas-8-cara-menentukan-persamaan-garis-lurus")
-    //        let request = URLRequest(url: url!)
     
-    //        material.load(html)
     
     
 }

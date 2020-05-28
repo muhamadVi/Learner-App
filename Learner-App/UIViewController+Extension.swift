@@ -62,13 +62,13 @@ extension UIViewController {
             
             
             let subject1question1 = Question(context: getViewContext())
-            subject1question1.question = "Exercise1 Intro.png"//bentuknya html klo bisa
+            subject1question1.question = "ILG exercise1"//bentuknya html klo bisa
             subject1question1.answer = "y = 3x + 3"
             subject1question1.step = 2
             subject1.addToQuestionRelationship(subject1question1) // menambahkan question 1 untuk subject 1
             
             let subject1question2 = Question(context: getViewContext())
-            subject1question2.question = "Exercise2 intro.png"//bentuknya html klo bisa
+            subject1question2.question = "ILG exercise2"//bentuknya html klo bisa
             subject1question2.answer = "2x - 4y = 0"
             subject1question2.step = 4
             subject1.addToQuestionRelationship(subject1question2) // menambahkan question 2 untuk subject 1
@@ -109,7 +109,7 @@ extension UIViewController {
             subject.append(subject2) //tambahkan subject 1 ke list
             //End of Subject 2
             print(subject.count)
-                    Subject.saveListSubject(context: getViewContext(), subjectList: subject) // save semua subject yang udah di tambahkan
+//                    Subject.saveListSubject(context: getViewContext(), subjectList: subject) // save semua subject yang udah di tambahkan
         }
     }
     
