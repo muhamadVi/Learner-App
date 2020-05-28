@@ -112,14 +112,14 @@ extension UIViewController {
         //Add cases rice
         let cases1 = Cases(context: getViewContext())
         cases1.casesID = UUID().uuidString
-        cases1.casesTitle = "Calculate yields per year"
+        cases1.casesTitle = "Driver"
         
         cases.append(cases1)
         
         
         let cases2 = Cases(context: getViewContext())
         cases2.casesID = UUID().uuidString
-        cases2.casesTitle = "Calculate vehicle speed on the road"
+        cases2.casesTitle = "Farmer"
         
         cases.append(cases2)
         
