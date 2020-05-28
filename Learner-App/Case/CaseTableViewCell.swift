@@ -8,12 +8,12 @@
 
 import UIKit
 
-class CaseTableViewCell: UITableViewCell {
+class CaseTableViewCell: UITableViewCell{
     @IBOutlet weak var LabelTitleCaseContent: UILabel!
     @IBOutlet weak var ImageViewCaseContent: UIImageView!
     @IBOutlet weak var CaseTableView: CaseTableViewCell!
     
-    var cases: [Cases]? {
+    var cases: Cases? {
         didSet {
             changeViewCell()
         }
@@ -41,9 +41,11 @@ class CaseTableViewCell: UITableViewCell {
            case "Car":
                 CaseTableView.backgroundColor = #colorLiteral(red: 0.5699979663, green: 0.6050838232, blue: 0.6172596812, alpha: 1)
                 ImageViewCaseContent.image = #imageLiteral(resourceName: "Car")
+                contentView.layer.cornerRadius = 10.0
            case "Rice":
                 CaseTableView.backgroundColor = #colorLiteral(red: 0, green: 0.83900249, blue: 1, alpha: 1)
                 ImageViewCaseContent.image = #imageLiteral(resourceName: "rice")
+                contentView.layer.cornerRadius = 10.0
            default:
                 CaseTableView.backgroundColor = #colorLiteral(red: 0.2156862745, green: 0.5529411765, blue: 0.2235294118, alpha: 0.16)
            }

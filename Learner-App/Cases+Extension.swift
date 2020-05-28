@@ -23,6 +23,7 @@ extension Cases {
         }
     }
     
+    
     static func saveListCases(context : NSManagedObjectContext, casesList : [Cases]) {
           for cases in casesList {
               let newCases = NSEntityDescription.insertNewObject(forEntityName: "Cases", into: context)
@@ -38,7 +39,8 @@ extension Cases {
           }
     }
     
-    static func fetchAll(context : NSManagedObjectContext) -> [Cases] {
+    //Ambil data dari cases entity di core data
+    static func fetchAllData(context : NSManagedObjectContext) -> [Cases] {
         let request: NSFetchRequest<Cases> = Cases.fetchRequest()
         //        let predicate = NSPredicate(format: "taskName BEGINSWITH 'm'")
         do {
@@ -50,14 +52,14 @@ extension Cases {
     }
     
     
-    static func getDataEachById(context : NSManagedObjectContext, casesID : String) -> [Cases] {
-        let request: NSFetchRequest<Cases> = Cases.fetchRequest()
-        let predicate = NSPredicate(format: "casesID = %@", casesID)
-        request.predicate = predicate
-        do {
-            return try context.fetch(request)
-        } catch {
-            return []
-        }
-    }
+    //static func getDataEachById(context : NSManagedObjectContext, casesID : String) -> [Cases] {
+      //  let request: NSFetchRequest<Cases> = Cases.fetchRequest()
+      //  let predicate = NSPredicate(format: "casesID = %@", casesID)
+      //  request.predicate = predicate
+      //  do {
+      //      return try context.fetch(request)
+      //  } catch {
+      //      return []
+      //  }
+    // }
 }
