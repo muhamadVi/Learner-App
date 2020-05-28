@@ -26,6 +26,7 @@ class CaseViewController: UIViewController, UITableViewDelegate, UITableViewData
         hideNavigationBar()
         getDataFromCoreData()
         fillCasesToCoreData()
+        setupUI()
         //setupUI()
         // Do any additional setup after loading the view.
     }
@@ -38,7 +39,7 @@ class CaseViewController: UIViewController, UITableViewDelegate, UITableViewData
     func getDataFromCoreData(){
         casesList = Cases.fetchAll(context: getViewContext())
         tableViewConfig()
-        print("ini dari learn view\(casesList)")
+        print("case view\(casesList)")
     }
     
     func tableViewConfig(){
@@ -63,6 +64,16 @@ class CaseViewController: UIViewController, UITableViewDelegate, UITableViewData
             return cell
         }
         return CaseTableViewCell()
+    }
+    
+    func setupUI() {
+        tableViewCaseContent.register(UINib(nibName: "CaseTableViewCell", bundle: nil), forCellReuseIdentifier: "CaseTableViewChild")
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let cases = casesList[indexPath.row]
+        performSegue(withIdentifier: "toDetailPage", sender: cases)
+        MiniDatabase.setLastProgressID(lastProgressID: cases.casesID ?? "nil")
     }
     
     

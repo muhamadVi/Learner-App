@@ -114,9 +114,13 @@ extension UIViewController {
         cases1.casesID = UUID().uuidString
         cases1.casesTitle = "Car"
         
+        cases.append(cases1)
+        
         
         let cases2 = Cases(context: getViewContext())
         cases2.casesID = UUID().uuidString
         cases2.casesTitle = "Rice"
+        
+        cases.append(cases2)
     }
 }

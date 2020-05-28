@@ -13,6 +13,12 @@ class CaseTableViewCell: UITableViewCell {
     @IBOutlet weak var ImageViewCaseContent: UIImageView!
     @IBOutlet weak var CaseTableView: CaseTableViewCell!
     
+    var cases: [Cases]? {
+        didSet {
+            changeViewCell()
+        }
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
