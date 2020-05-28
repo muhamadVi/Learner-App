@@ -91,7 +91,7 @@ class LearnViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let subject = subjectList[indexPath.row]
-        performSegue(withIdentifier: "toCasesContent", sender: subject)
+        performSegue(withIdentifier: "toDetailPage", sender: subject)
         MiniDatabase.setLastProgressID(lastProgressID: subject.subjectID ?? "nil")
     }
     

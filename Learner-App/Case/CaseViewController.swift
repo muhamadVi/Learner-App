@@ -9,6 +9,22 @@
 import UIKit
 
 class CaseViewController: UIViewController, UITableViewDelegate, UITableViewDataSource  {
+   
+    
+     /*  func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "LearnTableViewCell", for: indexPath) as? LearnTableViewCell {
+            let subject = subjectList[indexPath.row]
+            cell.labelSubjectLevel.text = subject.subjectLevel
+            cell.labelSubjectTitle.text = subject.subjectName
+            cell.labelSubjectProgress.text = "\(subject.subjectProgress)%"
+            cell.circleSubjectProgress.angle = changePercentToDegree(percent: Double(subject.subjectProgress))
+                  //persen/100 * 360 ini jadi degree
+            cell.changeColor()
+            return cell
+        }
+        return LearnTableViewCell()
+    }
+ */
     
    
     @IBOutlet weak var backgroundImageCase: UIImageView!
@@ -26,11 +42,27 @@ class CaseViewController: UIViewController, UITableViewDelegate, UITableViewData
         getDataFromCoreData()
         fillCasesToCoreData()
         hideNavigationBar()
-        setupUI()
+        
         
         //setupUI()
         // Do any additional setup after loading the view.
     }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+           if let cell = tableView.dequeueReusableCell(withIdentifier: "CaseTableViewCell", for: indexPath) as? CaseTableViewCell {
+               let cases = casesList[indexPath.row]
+               cell.labelTitleCase.text = cases.casesTitle
+               cell.changeViewCell()
+               return cell
+           }
+           return CaseTableViewCell()
+       }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+           let cases = casesList[indexPath.row]
+           performSegue(withIdentifier: "toCasesContent", sender: cases)
+           //MiniDatabase.setLastProgressID(lastProgressID: cases.casesID ?? "nil")
+       }
     
     
     override func viewWillAppear(_ animated: Bool) {
@@ -55,29 +87,12 @@ class CaseViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 100
+        return 200
     }
     
     //Show data by index
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if let cell = tableView.dequeueReusableCell(withIdentifier: "CaseTableViewChild", for: indexPath) as? CaseTableViewCell {
-            let cases = casesList[indexPath.row]
-            cell.LabelTitleCaseContent.text = cases.casesTitle
-            cell.changeViewCell()
-            return cell
-        }
-        return CaseTableViewCell()
-    }
     
     //Register the cell view to the controller
-    func setupUI() {
-        tableViewCaseContent.register(UINib(nibName: "CaseTableViewCell", bundle: nil), forCellReuseIdentifier: "CaseTableViewChild")
-    }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let cases = casesList[indexPath.row]
-        performSegue(withIdentifier: "toCaseContent", sender: cases)
-    }
     
     
     
