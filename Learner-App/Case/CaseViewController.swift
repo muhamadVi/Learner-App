@@ -11,9 +11,9 @@ import UIKit
 class CaseViewController: UIViewController, UITableViewDelegate, UITableViewDataSource  {
     
    
-    @IBOutlet weak var BackgroundImageCase: UIImageView!
-    @IBOutlet weak var LabelCaseTitle: UILabel!
-    @IBOutlet weak var ImageViewCaseIcon: UIImageView!
+    @IBOutlet weak var backgroundImageCase: UIImageView!
+    @IBOutlet weak var labelCaseTitle: UILabel!
+    @IBOutlet weak var imageViewCaseIcon: UIImageView!
     @IBOutlet weak var tableViewCaseContent: UITableView!
     
     
@@ -22,11 +22,12 @@ class CaseViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        hideNavigationBar()
+        tableViewConfig()
         getDataFromCoreData()
         fillCasesToCoreData()
+        hideNavigationBar()
         setupUI()
+        
         //setupUI()
         // Do any additional setup after loading the view.
     }
@@ -34,10 +35,11 @@ class CaseViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     override func viewWillAppear(_ animated: Bool) {
         hideNavigationBar()
+        
     }
     
     func getDataFromCoreData(){
-        casesList = Cases.fetchAll(context: getViewContext())
+        casesList = Cases.fetchAllData(context: getViewContext())
         tableViewConfig()
         print("case view\(casesList)")
     }
@@ -56,8 +58,9 @@ class CaseViewController: UIViewController, UITableViewDelegate, UITableViewData
         return 100
     }
     
+    //Show data by index
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if let cell = tableView.dequeueReusableCell(withIdentifier: "CaseTableViewCell", for: indexPath) as? CaseTableViewCell {
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "CaseTableViewChild", for: indexPath) as? CaseTableViewCell {
             let cases = casesList[indexPath.row]
             cell.LabelTitleCaseContent.text = cases.casesTitle
             cell.changeViewCell()
@@ -66,14 +69,14 @@ class CaseViewController: UIViewController, UITableViewDelegate, UITableViewData
         return CaseTableViewCell()
     }
     
+    //Register the cell view to the controller
     func setupUI() {
         tableViewCaseContent.register(UINib(nibName: "CaseTableViewCell", bundle: nil), forCellReuseIdentifier: "CaseTableViewChild")
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let cases = casesList[indexPath.row]
-        performSegue(withIdentifier: "toDetailPage", sender: cases)
-        MiniDatabase.setLastProgressID(lastProgressID: cases.casesID ?? "nil")
+        performSegue(withIdentifier: "toCaseContent", sender: cases)
     }
     
     

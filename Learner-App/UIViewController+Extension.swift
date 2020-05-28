@@ -122,5 +122,7 @@ extension UIViewController {
         cases2.casesTitle = "Rice"
         
         cases.append(cases2)
+        
+        Cases.saveListCases(context: getViewContext(), casesList: cases)
     }
 }
