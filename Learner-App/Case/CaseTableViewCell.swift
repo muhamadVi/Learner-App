@@ -25,7 +25,8 @@ class CaseTableViewCell: UITableViewCell {
              imageViewCase.image = #imageLiteral(resourceName: "rice")
              viewBackground.layer.cornerRadius = 10.0
         default:
-             viewBackground.backgroundColor = #colorLiteral(red: 0.2156862745, green: 0.5529411765, blue: 0.2235294118, alpha: 0.16)
+             viewBackground.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+             viewBackground.layer.cornerRadius = 10.0
         }
     }
 }
