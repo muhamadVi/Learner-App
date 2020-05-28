@@ -11,6 +11,7 @@ import Foundation
 
 let IS_FIRST_OPEN = "IS_FIRST_OPEN"
 let LAST_PROGRESS_ID_KEY = "LAST_PROGRESS_ID_KEY"
+let CLICKED_CASE_ID_KEY = "CLICKED_CASE_ID_KEY"
 
 class MiniDatabase {
     
@@ -29,5 +30,13 @@ class MiniDatabase {
     
     static func getLastProgressID() -> String {
         return UserDefaults.standard.string(forKey: LAST_PROGRESS_ID_KEY) ?? "nil"
+    }
+    
+    static func setClickedCaseTitle(title : String){
+        UserDefaults.standard.set(title, forKey: CLICKED_CASE_ID_KEY)
+    }
+    
+    static func getClickedCaseTitle() -> String {
+        return UserDefaults.standard.string(forKey: CLICKED_CASE_ID_KEY) ?? "nil"
     }
 }

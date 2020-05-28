@@ -101,6 +101,7 @@ class LearnViewController: UIViewController, UITableViewDelegate, UITableViewDat
     override func viewWillAppear(_ animated: Bool) {
         setLastProgress()
         hideNavigationBar()
+        learnTableView.reloadData()
     }
     
 //    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

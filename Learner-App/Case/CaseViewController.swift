@@ -22,7 +22,6 @@ class CaseViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableViewConfig()
         getDataFromCoreData()
         fillCasesToCoreData()
         hideNavigationBar()
@@ -45,7 +44,7 @@ class CaseViewController: UIViewController, UITableViewDelegate, UITableViewData
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
            let cases = casesList[indexPath.row]
            performSegue(withIdentifier: "toCasesContent", sender: cases)
-           //MiniDatabase.setLastProgressID(lastProgressID: cases.casesID ?? "nil")
+           MiniDatabase.setClickedCaseTitle(title: cases.casesTitle ?? "nil")
        }
     
     
@@ -58,6 +57,7 @@ class CaseViewController: UIViewController, UITableViewDelegate, UITableViewData
         casesList = Cases.fetchAllData(context: getViewContext())
         tableViewConfig()
         print("case view\(casesList)")
+        tableViewConfig()
     }
     
     func tableViewConfig(){
