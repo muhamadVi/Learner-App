@@ -639,6 +639,15 @@
                                 <rect key="frame" x="0.0" y="717" width="222" height="85"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vTC-cR-kap">
+                                <rect key="frame" x="20" y="822" width="100" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Preview"/>
+                                <connections>
+                                    <action selector="Previous:" destination="mPh-46-fwN" eventType="touchUpInside" id="osl-Sk-ao3"/>
+                                    <action selector="nextLesson:" destination="mPh-46-fwN" eventType="touchUpInside" id="p2c-6Q-S8b"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -660,6 +669,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="S3L-z1-ZSg"/>
                     <connections>
+                        <outlet property="btnPrevious" destination="vTC-cR-kap" id="WDF-JZ-dM2"/>
                         <outlet property="btnSubmitQuestion" destination="Mwr-d4-VoT" id="lrc-5M-ZEZ"/>
                         <outlet property="currentStep" destination="wrR-3T-NTy" id="NGe-De-dyZ"/>
                         <outlet property="imageLesson" destination="G4a-ie-m5F" id="oXa-aQ-eeV"/>
@@ -799,6 +809,7 @@
         <image name="Onboarding 1 asset" width="296" height="295"/>
         <image name="Onboarding 2 asset" width="270" height="257"/>
         <image name="Penjelasan" width="341" height="489"/>
+        <image name="Preview" width="158" height="60"/>
         <image name="Silver Logo" width="90" height="97.5"/>
         <image name="Slides1" width="74" height="8"/>
         <image name="Slides2" width="74" height="8"/>

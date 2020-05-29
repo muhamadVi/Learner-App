@@ -21,6 +21,7 @@ class LessonLearnViewController: UIViewController {
     @IBOutlet weak var imageQuestion: UIImageView!
     
     @IBOutlet weak var btnSubmitQuestion: UIButton!
+    @IBOutlet weak var btnPrevious: UIButton!
     
     var answerFromTheQuestion = ""
     
@@ -55,6 +56,19 @@ class LessonLearnViewController: UIViewController {
     }
     
     
+    @IBAction func Previous(_ sender: Any) {
+        print("clicked\(currentProgress)")
+        if (currentProgress != stepTotal) {
+            currentProgress = currentProgress - 1
+            print("isi \(currentProgress)")
+            updateProgressView()
+            Subject.updateSubject(context: getViewContext(), subjectID: MiniDatabase.getLastProgressID(), progress: Int16(setProgress), currentStep: Int16(currentProgress))
+            
+            setLastProgress()
+        }
+    }
+    
+    
     func setLastProgress(){
         let subjectID : String? = MiniDatabase.getLastProgressID()
         if subjectID != "nil" {
@@ -70,7 +84,7 @@ class LessonLearnViewController: UIViewController {
 
             setNavBar(title: String(subject[0].subjectName!))
             //updating progressview
-                        updateProgressView()
+            updateProgressView()
         }
     }
     
@@ -91,6 +105,7 @@ class LessonLearnViewController: UIViewController {
 
         totalStep.text = String(stepTotal)
         currentStep.text = String(currentProgress)
+        print("update \(currentProgress)")
         setProgress = Int((Float(currentProgress) / Float(stepTotal)) * 100)
         
         
